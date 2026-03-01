@@ -1,16 +1,21 @@
 /* EL DOCUMENTO QUE CONTROLA TODO EL CSS DEL DOCUMENTO! NUFSET! */
+@font-face{
+    font-family: synemono;
+    src: url(./SyneMono-Regular.ttf);
+}
 
 :root{
-    --color-primario: #fffff0 ;
-    --color-secundario: #00306c;
+    --color-primario: #eedecc ;
+    --color-secundario: #00316c;
     --color-terciario: #d25f5f;
     --color-cuaternario: #ffe58e;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: synemono;
 }
 
 body,h4,h3,h2,h1,p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: synemono;
+    font-weight: 100;
 
     font-size: medium;
 }
@@ -26,6 +31,17 @@ body{
     color: var(--color-secundario);
 
     background-color: var(--color-primario);
+    background-size: cover;
+}
+
+.boton-pc{
+    display:flexbox;
+}
+.boton-movil{
+    display: none;
+}
+.boton-movil h4{
+    content: "&#9776";
 }
 
 .linea-vertical{
@@ -81,6 +97,7 @@ header h4{
 
 header h4:hover, header h4:focus{
     background-size: 100% 100%; 
+    font-weight: bolder;
 }
 
 header div {
@@ -127,6 +144,7 @@ header div button h4{
 
 header div button:hover h4, header div button:focus h4{
     background-size: 100% 100%;
+    font-weight: bolder;
 }
 
 /*.boton-especial{
@@ -151,3 +169,16 @@ header div button:hover h4, header div button:focus h4{
         box-shadow: var(--color-secundario) 0px 0px 0px;
 }
 */
+
+@media only screen and (max-width: 700px) {
+    .boton-movil{
+        display:inline;
+    }
+    .boton-pc{
+        display: none;
+    }
+    header div button h4{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
