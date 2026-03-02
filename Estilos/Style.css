@@ -14,9 +14,9 @@
 :root{
     --color-primario: #fcf0cf ;
     --color-secundario: #001219;
-    --color-terciario: #AE2012;
-    --color-cuaternario: #EE9B00;
-    --color-quinto: #0A9396;
+    --color-terciario: #cd3f27;
+    --color-cuaternario: #fdd56f;
+    --color-quinto: #94c9cd;
 
     --tipografia-texto: "Special Elite";
     --tipografia-titulo: "Rubik Vinyl";
@@ -351,11 +351,8 @@ a:hover, a:focus{
     margin: 0;
     padding: 0;
 
-    box-sizing: border-box;
     height: auto;
-    width: 100%;
-
-    box-shadow: 0 0 80px 80px var(--color-primario) inset;
+    width: auto;
 }
 .sobremi h1{
     margin: 0;
@@ -371,22 +368,37 @@ a:hover, a:focus{
 
     width: 100%;
 }
-.sobremi img{
+.sobremi-img{
     margin: 0;
     padding: 0;
 
-    height: 617px;
+    height: 950px;
     width: 100%;
-    object-fit: cover;
 
-    position: relative;
-
-    border-top: var(--color-secundario) 2px solid;
+    background-image: url(./dithering-effect\(2\).png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-clip:border-box;
 }
+.sobremi-img-relleno{
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: auto;
+
+    background-image: url(../Imagenes/DSC00327.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-clip:border-box;
+}
+
 .sobremi-datos{
     padding: 20px;
     position: absolute;
-    transform: translate(10px, -610px) rotate(-3deg);
+    transform: translate(10px, 50px) rotate(-3deg) scale(1);
 
     box-shadow: 5px 5px 5px 5px #00000062;
 
@@ -396,6 +408,8 @@ a:hover, a:focus{
     width: 300px;
 
     transition: 0.3s;
+
+    z-index: 2;
 }
 .sobremi-datos h4{
     padding: 0;
@@ -412,7 +426,7 @@ a:hover, a:focus{
 }
 
 .sobremi-datos:hover{
-    scale: 1.025;
+    transform: translate(10px, 50px) rotate(0deg) scale(1.1);
     box-shadow: 5px 5px 10px 10px #00000033;
 }
 
@@ -448,6 +462,33 @@ b{
         box-shadow: var(--color-secundario) 0px 0px 0px;
 }
 */
+
+/* SELECCION HORIZONTAL */
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+
+    height: 30dvw;
+}
+.carrusel-item{
+    position: relative;
+
+    flex: 0 0 calc(100% * 3);
+    height: 100%;
+
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+.carrusel-item img{
+    width: 100%;
+    height: 100%;
+    border: var(--color-secundario) 2px solid;
+
+    object-fit: cover;
+}
 
 @media only screen and (max-width: 700px) {
     .wip-popup{
@@ -494,7 +535,7 @@ b{
 
         width: 100%;
     }
-    .sobremi img{
+    .sobremi-img{
         margin: 0;
         padding: 0;
 
@@ -514,6 +555,12 @@ b{
     .sobremi-datos{
         transform: translate(10px, 120px) rotate(-3deg);
     }
+
+    .sobremi-datos:hover{
+        transform: translate(10px, 120px) rotate(0deg) scale(1.1);
+        box-shadow: 5px 5px 10px 10px #00000033;
+    }
+
     .burger-movil{
         display: flex;
         position: absolute;
