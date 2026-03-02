@@ -31,6 +31,8 @@
     --tipografia-texto: "Special Elite";
     --tipografia-titulo: "Rubik Vinyl";
 
+    --padding-left: 60px;
+
     font-family: var(--tipografia-texto);
 }
 
@@ -39,6 +41,63 @@ body,h4,h3,h2,h1,p{
     font-weight: 100;
 
     font-size: medium;
+}
+
+/* WIP */
+
+.wip-popup-background{
+    background-color: #0a94963e;
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+}
+
+.wip-popup{
+    position: absolute;
+
+    left: calc(50% - 100px);
+    top: calc(50% - 200px);
+
+    background-color: khaki;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 10px 10px 7px #00000051;
+    transform: rotate(-3deg);
+
+    transition: 0.4s;
+
+    display: block;
+}
+
+.wip-popup h1{
+    font-size: larger;
+    letter-spacing: 4px;
+}
+
+.wip-popup p{
+    font-size: larger;
+    line-height: 25px;
+}
+
+.wip-popup button{
+    position: fixed;
+    left: 305px;
+    top: 0px;
+
+    background-color: #00000000;
+    border: none;
+}
+
+.wip-popup:hover{
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 15px 15px 10px #00000054;
+}
+
+.wip-popup:hover button p{
+    font-weight: 900;
 }
 
 /* EL CUERPO PRINCIPAL */
@@ -53,6 +112,7 @@ body{
 
     background-color: var(--color-primario);
     background-size: cover;
+
 }
 
 .boton-pc{
@@ -68,15 +128,17 @@ body{
 .linea-vertical{
     margin: 0;
 
-    border-color: var(--color-secundario);
-    border-style: solid;
-    border-width: 1.25px;
+    border: none;
 
     position: absolute;
 
     left: 80px;
 
-    height: 100%;
+    width: 1.25px;
+
+    background-color: var(--color-secundario);
+
+    min-height: 100%;
 }
 
 /* SOBRE MI */
@@ -86,7 +148,7 @@ header{
     flex-direction: row;
 
     margin: 0;
-    padding-left: 60px;
+    padding-left: var(--padding-left);
 
     align-items: center;
 
@@ -181,14 +243,14 @@ header div button:hover h4, header div button:focus h4, header div select:hover,
 }
 
 marquee{
-    margin-left: 20px;
-
+    margin-left: calc( var(--padding-left) - 40px);
+    padding: 6px;
 }
 
 /* CONTENIDO */
 
 .contenido{
-    margin-left: 100px;
+    padding-left: calc( var(--padding-left) + 40px );
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -266,6 +328,17 @@ marquee{
 
     color: var(--color-primario);
     background-color: var(--color-terciario);
+
+    width: 200px;
+}
+.sobremi-datos h4{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: medium;
 }
 
 .contenido div div p{
@@ -302,6 +375,10 @@ b{
 */
 
 @media only screen and (max-width: 700px) {
+    :root{
+        --padding-left: 0px;
+    }
+
     .boton-movil{
         display:inline;
     }
@@ -311,5 +388,16 @@ b{
     header div button h4{
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .seleccion-horizontal{
+        flex-direction: column;
+    }
+    .contenido h1{
+        font-size: 100px;
+    }
+    .linea-vertical{
+        margin: 0;
+        padding: 0;
+        display: none;
     }
 }
