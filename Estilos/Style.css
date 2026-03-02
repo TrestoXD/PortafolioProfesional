@@ -261,8 +261,8 @@ marquee{
 }
 .sobremi-datos{
     padding: 10px;
-    position: fixed;
-    transform: translate(-650px, 10px);
+    position: absolute;
+    transform: translate(-630px, 10px);
 
     color: var(--color-primario);
     background-color: var(--color-terciario);
