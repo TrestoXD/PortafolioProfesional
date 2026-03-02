@@ -24,7 +24,16 @@
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
             </select>
-            <button class="boton-movil"><h4>&#9776;</h4></button>
+            <button class="boton-movil" id="burger-button" onclick="hamburgesa()"><h4>&#9776;</h4></button>
+        </div>
+        <div class="burger-movil" id="burger">
+            <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
+            <button class="burger-boton-movil"><h4>PROYECTOS</h4></button>
+            <button class="burger-boton-movil"><h4>CONTACTO</h4></button>
+            <select class="burger-boton-movil" name="IDIOMA">
+                <option value="castellano">CASTELLANO</option>
+                <option value="english">ENGLISH</option>
+            </select>
         </div>
     </header>
     <header class="header-marquee">
@@ -36,16 +45,22 @@
         <div class="seleccion-horizontal">
             <div class="sobremi" style="padding: 0;">
                 <h1>SOBRE MÍ</h1>
-                <img src="./dithering-effect(2).png" alt="Foto-mia">
-                <span class="sobremi-datos">
-                    <h4>NACIMIENTO:</h4>
-                    <p>FECHA: 18 DE ABRIL DE 2008</p>
-                    <p>LUGAR: BARCELONA</p>
-                </span>
+                <img src="./Estilos/dithering-effect(2).png" alt="Foto-mia">
+                <div class="sobremi-datos" style="border: none;">
+                    <h4 style="margin-top: 4px;">NACIMIENTO:</h4>
+                    <p><b>FECHA:</b> 18 DE ABRIL DE 2008</p>
+                    <p><b>LUGAR:</b> BARCELONA</p>
+                    <p><b>SEXO:</b> HOMBRE</p>
+                    <p><b>NACIONALIDAD:</b> ESPAÑOL</p>
+                    <H4>ESTADOS:</H4>
+                    <p><b>ESTADO ACADEMICO:</b> ESTUDIANTE</p>
+                    <p><b>OCUPACIÓN:</b> TRABAJANDO </p>
+                </div>
             </div>
 
             <div class="seleccion-vertical" style="border: none; padding: 0;">
-                <div>
+                <div style="flex-grow: 1;">
+                    <h2>DESCRIPCIÓN:</h2>
                     <p style="font-size: 20px;">
     Mi nombre es Vito Minaya González, fotografo aficionado apasionado de capturar momentos extraordinarios que suceden en mi vida cotidiana. 
     Mientras que la fotografia me encanta, mi trabajo a tiempo completo es en la <b>Informatica</b> y la <b>Ciencia</b>. Creiendo que entender 
@@ -53,11 +68,24 @@
     meticulosamente construidas para el rendimiento y accesibilidad.
                     </p>
                 </div>   
-                <div>
-
+                <div style="flex-grow: 1;">
+                    <h2>LENGUAJES DE PROGRAMACIÓN CON CONOCIMIENTO:</h2>
+                    <ul>
+                        <li><a href="https://es.wikipedia.org/wiki/JavaScript">JAVASCRIPT</a></li>
+                        <li><a href="https://www.python.org/">PYTHON</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)">C</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/C_Sharp">C#</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">JAVA</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)">RUST</a></li>
+                    </ul>
                 </div>
             </div>
-
+        </div>
+        <div class="seleccion-vertical">
+            <div>
+                <h2>ESTUDIOS</h2>
+            </div>
         </div>
     </div>
 
@@ -72,4 +100,5 @@
     </div>
 </body>
     <script src="./Codigos/WIP.js"></script>
+    <script src="./Codigos/burger.js"></script>
 </html>

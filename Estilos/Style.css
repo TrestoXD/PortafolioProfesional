@@ -1,14 +1,4 @@
 /* EL DOCUMENTO QUE CONTROLA TODO EL CSS DEL DOCUMENTO! NUFSET! */
-@font-face{
-    font-family: synemono;
-    src: url(./SyneMono-Regular.ttf);
-}
-@font-face {
-    font-family: kentokyo;
-    src: url(./ZenTokyoZoo-Regular.ttf);
-
-}
-
 .special-elite-regular {
   font-family: "Special Elite", system-ui;
   font-weight: 400;
@@ -113,6 +103,7 @@ body{
     background-color: var(--color-primario);
     background-size: cover;
 
+    margin-bottom: 20px;
 }
 
 .boton-pc{
@@ -120,6 +111,7 @@ body{
 }
 .boton-movil{
     display: none;
+    padding: 0;
 }
 .boton-movil h4{
     content: "&#9776";
@@ -127,17 +119,16 @@ body{
 
 .linea-vertical{
     margin: 0;
+    display: inline-block;
 
-    border: none;
-
-    position: absolute;
-
+    position: fixed;
     left: 80px;
 
     width: 1.25px;
 
+    border: none;
     background-color: var(--color-secundario);
-
+    
     min-height: 100%;
 }
 
@@ -225,7 +216,7 @@ header div button h4, header div select{
     padding-top: 5px;
 
     color: var(--color-secundario);
-    
+
     background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -238,6 +229,27 @@ header div button:hover h4, header div button:focus h4, header div select:hover,
     font-weight: 900;
 }
 
+.burger-movil{
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    
+    top: 109px;
+
+    height: auto;
+
+    background-color: var(--color-primario);
+    border-color: var(--color-secundario);
+    border-width: 2px;
+    border-style: solid;
+
+    display: none;
+}
+
 .header-marquee{
     background-color: var(--color-quinto);
 }
@@ -247,12 +259,35 @@ marquee{
     padding: 6px;
 }
 
+a{
+    background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.3s ease;
+
+    padding-top: 5px;
+    padding-right: 10px;
+
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+a:hover, a:focus{
+    background-size: 100% 100%;
+    font-weight: 900;
+}
+
 /* CONTENIDO */
 
 .contenido{
     padding-left: calc( var(--padding-left) + 40px );
     margin-top: 20px;
     margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
 }
 
 .contenido h1{
@@ -265,6 +300,30 @@ marquee{
 
     font-family: var(--tipografia-titulo);
     font-size: 120px;
+}
+.contenido h2{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    text-wrap-mode: wrap;
+
+    font-size: 20px;
+
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.contenido ul{
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+
+    columns: 2;
+    -moz-columns: 2;
+}
+.contenido li{
+    padding: 4px;
 }
 
 .seleccion-horizontal{
@@ -292,7 +351,8 @@ marquee{
     margin: 0;
     padding: 0;
 
-    height: 800px;
+    box-sizing: border-box;
+    height: auto;
     width: 100%;
 
     box-shadow: 0 0 80px 80px var(--color-primario) inset;
@@ -300,7 +360,9 @@ marquee{
 .sobremi h1{
     margin: 0;
     padding: 20px;
-    background-image: linear-gradient(#fcf0cf 50%, #00000000);
+
+    font-size: 7vw;
+    object-fit: cover;
 }
 .sobremi hr{
     padding: 0;
@@ -322,23 +384,36 @@ marquee{
     border-top: var(--color-secundario) 2px solid;
 }
 .sobremi-datos{
-    padding: 10px;
+    padding: 20px;
     position: absolute;
-    transform: translate(-630px, 10px);
+    transform: translate(10px, -610px) rotate(-3deg);
+
+    box-shadow: 5px 5px 5px 5px #00000062;
 
     color: var(--color-primario);
     background-color: var(--color-terciario);
 
-    width: 200px;
+    width: 300px;
+
+    transition: 0.3s;
 }
 .sobremi-datos h4{
     padding: 0;
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: 12px;
 
-    text-decoration: underline;
     font-weight: 900;
-    font-size: medium;
+    font-size: large;
+    width: 100%;
+    border-bottom: 2px solid var(--color-primario);
+
+}
+
+.sobremi-datos:hover{
+    scale: 1.025;
+    box-shadow: 5px 5px 10px 10px #00000033;
 }
 
 .contenido div div p{
@@ -375,6 +450,11 @@ b{
 */
 
 @media only screen and (max-width: 700px) {
+    .wip-popup{
+        left: calc(50% - 200px);
+        top: calc(50% - 200px);
+    }
+
     :root{
         --padding-left: 0px;
     }
@@ -389,15 +469,86 @@ b{
         padding-left: 0px;
         padding-right: 0px;
     }
+    .contenido{
+        padding: 10px;
+        margin: 0;
+
+        width: calc(100% - 20px);
+    }
     .seleccion-horizontal{
         flex-direction: column;
     }
+    .seleccion-vertical{
+        flex-direction: column;
+    }
     .contenido h1{
-        font-size: 100px;
+        font-size: 14vw;
+    }
+
+    .sobremi{
+        display: flex;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        height: auto;
+
+        width: 100%;
+    }
+    .sobremi img{
+        margin: 0;
+        padding: 0;
+
+        height: 639px;
+        width: 100%;
+        object-fit: cover;
+
+        position: relative;
+
+        border-top: var(--color-secundario) 2px solid;
     }
     .linea-vertical{
         margin: 0;
         padding: 0;
         display: none;
+    }
+    .sobremi-datos{
+        transform: translate(10px, 120px) rotate(-3deg);
+    }
+    .burger-movil{
+        display: flex;
+        position: absolute;
+        float: left;
+
+        width: 200px;
+
+        align-items: start;
+        z-index: 99;
+
+        padding: 5px;
+    }
+    .burger-boton-movil{
+        width: 100%;
+    }
+    .burger-movil button h4{
+        font-size: 20px;
+        width: 100%;
+        padding-left: 4px;
+
+        text-align: start;
+    }
+    .burger-movil select{
+        display: flex;
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+        padding-top: 4px;
+
+        font-size: 20px;
+        text-align: start;
+    }
+    .burger-movil select option{
+        text-align: start;
+        width: 1000px;
     }
 }

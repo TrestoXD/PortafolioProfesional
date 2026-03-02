@@ -1,4 +1,3 @@
-
 //VARIABLES
 
 const _debug = false;
@@ -8,7 +7,7 @@ const _popupbackground = document.getElementById('popupbackground');
 
 let _popupdata = sessionStorage.getItem("wippopup");
 
-// CODIGO DEL POPUP
+//CODIGO DEL POPUP
 
 if(_popupdata == null || _debug == true){
     console.log("SACANDO POPUP!");
