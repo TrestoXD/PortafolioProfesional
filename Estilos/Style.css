@@ -3,18 +3,39 @@
     font-family: synemono;
     src: url(./SyneMono-Regular.ttf);
 }
+@font-face {
+    font-family: kentokyo;
+    src: url(./ZenTokyoZoo-Regular.ttf);
+
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 :root{
-    --color-primario: #eedecc ;
-    --color-secundario: #00316c;
-    --color-terciario: #d25f5f;
-    --color-cuaternario: #ffe58e;
+    --color-primario: #fcf0cf ;
+    --color-secundario: #001219;
+    --color-terciario: #AE2012;
+    --color-cuaternario: #EE9B00;
+    --color-quinto: #0A9396;
 
-    font-family: synemono;
+    --tipografia-texto: "Special Elite";
+    --tipografia-titulo: "Rubik Vinyl";
+
+    font-family: var(--tipografia-texto);
 }
 
 body,h4,h3,h2,h1,p{
-    font-family: synemono;
+    font-family: var(--tipografia-texto);
     font-weight: 100;
 
     font-size: medium;
@@ -87,6 +108,9 @@ header h4{
     margin-left: 30px;
     padding-left: 10px;
     padding-right: 20px;
+        padding-top: 5px;
+
+    font-weight: 100;
 
     background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
     background-position: 0 100%;
@@ -97,7 +121,7 @@ header h4{
 
 header h4:hover, header h4:focus{
     background-size: 100% 100%; 
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 header div {
@@ -115,9 +139,10 @@ header div {
 
     align-content: center;
 }
-header div button{
+header div button, header div select{
     margin: 0;
     padding: 0;
+
 
     height: auto;
     
@@ -126,12 +151,16 @@ header div button{
     background-color: transparent;
 
     border: none;
+
+    font-family: var(--tipografia-texto);
+    font-size: medium;
 }
 
-header div button h4{
+header div button h4, header div select{
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 5px;
 
     color: var(--color-secundario);
     
@@ -142,11 +171,113 @@ header div button h4{
     transition: background-size 0.3s ease;
 }
 
-header div button:hover h4, header div button:focus h4{
+header div button:hover h4, header div button:focus h4, header div select:hover, header div select:focus{
     background-size: 100% 100%;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
+.header-marquee{
+    background-color: var(--color-quinto);
+}
+
+marquee{
+    margin-left: 20px;
+
+}
+
+/* CONTENIDO */
+
+.contenido{
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.contenido h1{
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-wrap-mode: nowrap;
+
+    font-family: var(--tipografia-titulo);
+    font-size: 120px;
+}
+
+.seleccion-horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.seleccion-vertical{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: justify;
+}
+
+.contenido div div{
+    border-color: var(--color-secundario);
+    border-style: solid;
+    border-width: 2px;
+
+    padding: 10px;
+}
+.sobremi{
+    margin: 0;
+    padding: 0;
+
+    height: 800px;
+    width: 100%;
+
+    box-shadow: 0 0 80px 80px var(--color-primario) inset;
+}
+.sobremi h1{
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(#fcf0cf 50%, #00000000);
+}
+.sobremi hr{
+    padding: 0;
+    margin: 0;
+    color: #001219;
+
+    width: 100%;
+}
+.sobremi img{
+    margin: 0;
+    padding: 0;
+
+    height: 617px;
+    width: 100%;
+    object-fit: cover;
+
+    position: relative;
+
+    border-top: var(--color-secundario) 2px solid;
+}
+.sobremi-datos{
+    padding: 10px;
+    position: fixed;
+    transform: translate(-650px, 10px);
+
+    color: var(--color-primario);
+    background-color: var(--color-terciario);
+}
+
+.contenido div div p{
+    padding: 0;
+    margin: 0;
+
+    font-size: large;
+}
+
+b{
+    font-weight: 900;
+}
 /*.boton-especial{
     background-color: var(--color-terciario);
 
