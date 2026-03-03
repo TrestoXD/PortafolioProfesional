@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vito Minaya Gonzalez - Sobre mi</title>
+    <title>Vito Minaya González - Sobre mi</title>
     <link rel="stylesheet" href="./Estilos/Style.css">
     <link rel="shortcut icon" href="./Estilos/Icono.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,8 @@
         <h4>Vito Minaya González</h4>
         <div>
             <button class="boton-pc" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="boton-pc"><h4>PROYECTOS</h4></button>
-            <button class="boton-pc"><h4>CONTACTO</h4></button>
+            <button class="boton-pc" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
+            <button class="boton-pc" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
             <select class="boton-pc" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -29,8 +29,8 @@
         </div>
         <div class="burger-movil" id="burger">
             <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="burger-boton-movil"><h4>PROYECTOS</h4></button>
-            <button class="burger-boton-movil"><h4>CONTACTO</h4></button>
+            <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
+            <button class="burger-boton-movil" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
             <select class="burger-boton-movil" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="carrusel">
+        <!--<div class="carrusel">
             <div class="carrusel-inner">
                 <div class="carrusel-item" style="padding: 0; border: none;">
                     <img src="https://scontent-mad1-1.cdninstagram.com/v/t51.82787-15/621144096_18310617148269709_6912425187180387356_n.webp?_nc_cat=105&ig_cache_key=MzgxODU5OTUzMzgzMjA5MDQyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=Eg3KzP3YV2EQ7kNvwH-hNvS&_nc_oc=Adkcap-WVZjfguPhBiLsQhNAsIs4aOMtiQrdy2_ucGbNyJ27OJoKvq3fRK0Cq42l4lI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mad1-1.cdninstagram.com&_nc_gid=n7utnuvZC2MzpJ_AQ9Wn0g&_nc_ss=8&oh=00_Afwyy9GKiFAkmq5hfZTZPA3489n_0M2UfrmV-G7oASBfHA&oe=69AB94DB" alt="Imagen1">
@@ -105,12 +105,22 @@
                     <img src="https://instagram.fqsa1-1.fna.fbcdn.net/v/t51.82787-15/640417967_18314983810269709_2405189150188084110_n.webp?_nc_cat=111&ig_cache_key=Mzg0NDcxMDM3MTcwMTU3OTczNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=o23j0jAzbhAQ7kNvwF3-Zi7&_nc_oc=Adl4DpOIgpF6F9vsr1YFxd_ShaBxs6D_BJgvU0Pb-cZ_L6VVP45D7qDsXuTUXJDIkQQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fqsa1-1.fna&_nc_gid=oc61eGR3crzXpMcgb3beJA&_nc_ss=8&oh=00_AfxELI53wuwJMxlPCy-vLCUhGUOr6Xrs_S_LPSsHevrygA&oe=69ACC18B" alt="">
                 </div>
             </div>
-        </div>
+        </div>-->
 
-        <div class="seleccion-vertical">
+        <div class="seleccion-horizontal">
             <div>
                 <h2>ESTUDIOS</h2>
-                <p></p>
+                <h3>Instituto de educación secundaria la Garrotxa.</h3>
+                <p>1-4 ESO</p>
+                <hr style="border-color: var(--color-secundario); border-style: solid;">
+                <h3>Centro de estudios Monlau</h3>
+                <p>CFGM en Sistemas microinformáticos y redes.</p>
+            </div>
+            <div class="seleccion-vertical pc" style="margin-left: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+                <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
             </div>
         </div>
     </div>
