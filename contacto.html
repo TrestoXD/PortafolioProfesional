@@ -58,16 +58,26 @@
                     <p>vitominayagonzalez@hotmail.com</p>
                 </div> 
             </div>
-            <form action="https://api.web3forms.com/submit" method="post" class="seleccion-vertical"  style="gap: 10px;">
+            <!--
+            <form action="https://api.web3forms.com/submit" method="POST" class="seleccion-vertical"  style="gap: 10px;">
                 <input type="hidden" name="acces_key" value="4dc4f21f-e515-4036-9c17-895cee522206">
                 <div style="display: flex; padding: 0; border: none; gap: 10px;">
                     <input type="email" name="email" required placeholder="Tu Correo Electronico*">
                     <input type="text" name="name" placeholder="Asunto">
                 </div>
                 <div style="display: flex; padding: 0; border: none;">
-                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..." style="height: 100px; min-width: calc(100% - 12px);"></textarea>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." style="height: 100px; min-width: calc(100% - 12px);"></textarea>
                 </div>
                 <button type="submit" class="boton-submit">Enviar Paloma</button>
+            </form>-->
+            <form action="https://api.web3forms.com/submit" method="POST" style="gap: 10px; display: flex; flex-direction: column;">
+              <input type="hidden" name="access_key" value="4dc4f21f-e515-4036-9c17-895cee522206">
+              
+              <input type="text" name="name" required placeholder="Nombre*" style="width: calc(100% - 12px)">
+              <input type="email" name="email" required placeholder="Correo electronico*" style="width: calc(100% - 12px)">
+              <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100px;"></textarea>
+              
+              <button type="submit">Submit</button>
             </form>
         </div>
     </div>

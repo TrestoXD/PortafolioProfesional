@@ -557,7 +557,7 @@ input, textarea{
 
     border: var(--color-secundario) 2px solid;
 }
-.boton-submit{
+button[type=submit] {
     padding: 10px;
     border: var(--color-secundario) 2px solid;
     background-color: transparent;
