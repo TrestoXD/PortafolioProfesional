@@ -10,6 +10,15 @@
   font-style: normal;
 }
 
+/* ANIMACION DEL CARRUSEL */
+
+@keyframes slide{
+    0%, 22.5% { transform: translateX(0%); }
+    25%, 47.5% { transform: translateX(-33.333%); }
+    50%, 72.5% { transform: translateX(-66.666%); }
+    75%, 97.5% { transform: translateX(-33.333%); }
+    100% { transform: translateX(0%); }
+}
 
 :root{
     --color-primario: #fcf0cf ;
@@ -24,6 +33,10 @@
     --padding-left: 60px;
 
     font-family: var(--tipografia-texto);
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body,h4,h3,h2,h1,p{
@@ -42,6 +55,8 @@ body,h4,h3,h2,h1,p{
 
     width: 100%;
     height: 100%;
+
+    z-index: 10;
 }
 
 .wip-popup{
@@ -60,6 +75,7 @@ body,h4,h3,h2,h1,p{
     transition: 0.4s;
 
     display: block;
+    z-index: 11;
 }
 
 .wip-popup h1{
@@ -195,7 +211,6 @@ header div {
 header div button, header div select{
     margin: 0;
     padding: 0;
-
 
     height: auto;
     
@@ -375,11 +390,20 @@ a:hover, a:focus{
     height: 950px;
     width: 100%;
 
-    background-image: url(./dithering-effect\(2\).png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-clip:border-box;
+--pattern: 
+  radial-gradient(closest-side, #777, #fff) 0/ 0.3em 0.3em space;
+--map: 
+  conic-gradient(#444444 0 0), 
+  url(../Imagenes/fotomia.jpg) 50%/ cover
+  grey;
+background: var(--pattern), var(--map);
+background-blend-mode: 
+  multiply /* between pattern & map */, 
+  screen /* between map layers */, 
+  luminosity /* between map layers */;
+filter: contrast(16);
+
+mix-blend-mode: multiply;
 }
 .sobremi-img-relleno{
     margin: 0;
@@ -388,11 +412,20 @@ a:hover, a:focus{
     height: 100%;
     width: auto;
 
-    background-image: url(../Imagenes/DSC00327.JPG);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-clip:border-box;
+--pattern: 
+  radial-gradient(closest-side, #777, #fff) 0/ 0.3em 0.3em space;
+--map: 
+  conic-gradient(#2b2a2a 0 0), 
+  url(../Imagenes/DSC00327.JPG) 50%/ cover
+  grey;
+background: var(--pattern), var(--map);
+background-blend-mode: 
+  multiply /* between pattern & map */, 
+  screen /* between map layers */, 
+  luminosity /* between map layers */;
+filter: contrast(16);
+
+mix-blend-mode: multiply;
 }
 
 .sobremi-datos{
@@ -465,17 +498,28 @@ b{
 
 /* SELECCION HORIZONTAL */
 .carrusel{
+    --slides: 3;
+    --h: 35dvw;
+
     display: flex;
     flex-direction: row;
     gap: 20px;
     overflow: hidden;
 
-    height: 30dvw;
+    width: calc(100% * var(--slides));
+    height: var(--h);
+}
+.carrusel-inner{
+    display: flex;
+    width: calc(var(--slides) * 20%);
+
+    animation: slide 20s infinite ease-in-out;
+    will-change: transform;
 }
 .carrusel-item{
     position: relative;
 
-    flex: 0 0 calc(100% * 3);
+    flex: 0 0 calc(100% / var(--slides));
     height: 100%;
 
     display: flex;
@@ -483,11 +527,22 @@ b{
     place-items: center;
 }
 .carrusel-item img{
+    position: absolute;
+    inset: 0;
+
     width: 100%;
     height: 100%;
+
     border: var(--color-secundario) 2px solid;
 
     object-fit: cover;
+    z-index: 1;
+}
+
+/* FILTRO DE IMAGEN */
+.imagen-filtro{
+    background-image: radial-gradient(14px at 50% 50%, black, white);
+    background-size: 20px 20px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -597,5 +652,14 @@ b{
     .burger-movil select option{
         text-align: start;
         width: 1000px;
+    }
+    .sobremi-img-relleno{
+        display: none;
+    }
+    .carrusel{
+        --h: 65dvh;
+    }
+    .carrusel-inner{
+        width: calc(var(--slides) * 30%);
     }
 }
