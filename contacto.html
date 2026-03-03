@@ -45,12 +45,11 @@
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA WEB -->
     <div class="contenido">
         <div class="seleccion-vertical">
-            <div class="seleccion-vertical" style=" vertical-align: middle; display: flex; flex-direction: row;">
+            <div class="seleccion-vertical" style=" vertical-align: middle;">
                 <div style="border: none;">
-                    <H1 style="text-align: center; vertical-align: middle; padding: 0;">CONTACTAME</H1>
+                    <H1 style="text-align: center; vertical-align: middle; padding: 0; font-size: 11vw;">CONTACTAME</H1>
                 </div>
-                <hr style="margin: 0;">
-                <div style="border: none; padding: 0; align-content: center;">
+                <div style="border: none;">
                     <h2 style="text-decoration: underline;">Ubicación:</h2>
                     <p>Barcelona</p>
                     <h2 style="text-decoration: underline;">Numero de Telefono:</h2>
@@ -59,15 +58,17 @@
                     <p>vitominayagonzalez@hotmail.com</p>
                 </div> 
             </div>
-            <div class="seleccion-vertical" style="gap: 10px;">
+            <form action="https://api.web3forms.com/submit" class="seleccion-vertical"  style="gap: 10px;">
+                <input type="hidden" name="acces_key" value="4dc4f21f-e515-4036-9c17-895cee522206">
                 <div style="display: flex; padding: 0; border: none; gap: 10px;">
-                    <input type="text" placeholder="Tu Correo Electronico*">
-                    <input type="text" placeholder="Asunto">
+                    <input type="email" name="email" required placeholder="Tu Correo Electronico*">
+                    <input type="text" name="name" placeholder="Asunto">
                 </div>
                 <div style="display: flex; padding: 0; border: none;">
                     <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje..." style="height: 100px; min-width: calc(100% - 12px);"></textarea>
                 </div>
-            </div>
+                <button type="submit" class="boton-submit">Enviar Paloma</button>
+            </form>
         </div>
     </div>
 </body>

@@ -557,6 +557,14 @@ input, textarea{
 
     border: var(--color-secundario) 2px solid;
 }
+.boton-submit{
+    padding: 10px;
+    border: var(--color-secundario) 2px solid;
+    background-color: transparent;
+
+    font-family: var(--tipografia-texto);
+    font-size: large;
+}
 
 /* FILTRO DE IMAGEN */
 .imagen-filtro{

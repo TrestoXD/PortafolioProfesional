@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vito Minaya González - Sobre mi</title>
+
+    <!-- ARCHIVOS CSS -->
     <link rel="stylesheet" href="./Estilos/Style.css">
+    
+    <!-- ICONO DE LA PAGINA WEB -->
     <link rel="shortcut icon" href="./Estilos/Icono.png" type="image/x-icon">
+    
+    <!-- FUENTES DE TEXTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Special+Elite&display=swap" rel="stylesheet">
@@ -16,6 +22,8 @@
     <hr class="linea-vertical">
     <header>
         <h4>Vito Minaya González</h4>
+        
+        <!-- MENU DE LA PAGINA WEB EN ORDENADOR -->
         <div>
             <button class="boton-pc" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="boton-pc" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
@@ -27,6 +35,8 @@
             </select>
             <button class="boton-movil" id="burger-button" onclick="hamburgesa()"><h4>&#9776;</h4></button>
         </div>
+        
+        <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="burger-movil" id="burger">
             <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
@@ -38,12 +48,18 @@
             </select>
         </div>
     </header>
+
+    <!-- TEXTO EN MOVIMIENTO -->
     <header class="header-marquee">
         <marquee>¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
     </header>
 
+
+
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA WEB -->
     <div class="contenido">
+
+        <!-- CONTENIDO SOBRE -->
         <div class="seleccion-horizontal">
             <div class="seleccion-vertical" style="border: 0; padding: 0; gap: 0;">
                 <div class="sobremi" style="padding: 0;">
@@ -107,6 +123,7 @@
             </div>
         </div>-->
 
+        <!-- CONTENIDO ESTUDIOS -->
         <div class="seleccion-horizontal">
             <div>
                 <h2>ESTUDIOS</h2>
@@ -125,6 +142,9 @@
         </div>
     </div>
 
+
+
+    <!-- POP UP -->
     <div class="wip-popup-background" id="popupbackground"></div>
     <div class="wip-popup" id="popup">
         <button> <p>X</p> </button>
@@ -134,6 +154,8 @@
     si encuentra algun error no se espante y contacteme de seguida, el apoyo se agradece!
         </p>
     </div>
+
+
 </body>
     <script src="./Codigos/WIP.js"></script>
     <script src="./Codigos/burger.js"></script>
