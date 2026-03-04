@@ -5,5 +5,4 @@
 
 <a href="https://trestoxd.github.io/PortafolioProfesional/"> ACCEDE AL PORTAFOLIO </a>
 
-<img width="1854" height="1590" alt="trestoxd github io-Vito-Minaya-Gonz-lez" src="https://github.com/user-attachments/assets/66a58429-f1b4-4fcc-95c4-d0913e1c0dfc" />
-
+<img width="1838" height="1769" alt="trestoxd github io-Vito-Minaya-Gonz-lez(1)" src="https://github.com/user-attachments/assets/f765bb95-39d4-4e94-a9d2-e165d613b1d8" />
