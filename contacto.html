@@ -44,10 +44,10 @@
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA WEB -->
     <div class="contenido">
-        <div class="seleccion-vertical">
+        <div class="seleccion-horizontal">
             <div class="seleccion-vertical" style=" vertical-align: middle;">
                 <div style="border: none;">
-                    <H1 style="text-align: center; vertical-align: middle; padding: 0; font-size: 11vw;">CONTACTAME</H1>
+                    <H1 style="text-align: center; vertical-align: middle; padding: 0; font-size: 6vw;">CONTÁCTAME</H1>
                 </div>
                 <div style="border: none;">
                     <h2 style="text-decoration: underline;">Ubicación:</h2>
@@ -70,15 +70,20 @@
                 </div>
                 <button type="submit" class="boton-submit">Enviar Paloma</button>
             </form>-->
-            <form action="https://api.web3forms.com/submit" method="POST" style="gap: 10px; display: flex; flex-direction: column;">
+            <form action="https://api.web3forms.com/submit" method="POST" style="gap: 10px; display: flex; flex-direction: column; width: 100%; height: auto;">
               <input type="hidden" name="access_key" value="4dc4f21f-e515-4036-9c17-895cee522206">
               
               <input type="text" name="name" required placeholder="Nombre*" style="width: calc(100% - 12px)">
               <input type="email" name="email" required placeholder="Correo electronico*" style="width: calc(100% - 12px)">
-              <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100px;"></textarea>
+              <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100%;"></textarea>
               
               <button type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;"> &lt&lt ENVIAR &gt&gt</button>
             </form>
+        </div>
+        <div class="seleccion-vertical">
+            <div style="padding: 0;">
+                <section class="phone-img"></section>
+            </div>
         </div>
     </div>
 

@@ -442,6 +442,29 @@ filter: contrast(16);
 mix-blend-mode: multiply;
 }
 
+.phone-img{
+    margin: 0;
+    padding: 0;
+
+    height: 750px;
+    width: 100%;
+
+--pattern: 
+  radial-gradient(closest-side, #777, #fff) 0/ 0.3em 0.3em space;
+--map: 
+  conic-gradient(#2b2a2a 0 0), 
+  url(../Imagenes/phone.jpeg) 50%/ cover
+  grey;
+background: var(--pattern), var(--map);
+background-blend-mode: 
+  multiply /* between pattern & map */, 
+  screen /* between map layers */, 
+  luminosity /* between map layers */;
+filter: brightness(0.7) contrast(16);
+
+mix-blend-mode: multiply;
+}
+
 .sobremi-datos{
     padding: 20px;
     position: absolute;
