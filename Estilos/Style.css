@@ -21,7 +21,7 @@
 }
 
 :root{
-    --color-primario: #fcf0cf ;
+    --color-primario: #f0ebdf ;
     --color-secundario: #001219;
     --color-terciario: #cd3f27;
     --color-cuaternario: #fdd56f;
@@ -46,6 +46,8 @@ body,h4,h3,h2,h1,p{
 
     font-size: medium;
 }
+
+
 
 /* WIP */
 
@@ -356,6 +358,12 @@ a:hover, a:focus{
     text-align: justify;
 }
 
+.seleccion-horizontal-mv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .contenido div div{
     border-color: var(--color-secundario);
     border-style: solid;
@@ -545,6 +553,7 @@ b{
     z-index: 1;
 }
 
+/* CONTACTAME */
 input, textarea{
     padding: 5px;
     padding-top: 8px;
@@ -559,7 +568,6 @@ input, textarea{
 }
 button[type=submit] {
     padding: 10px;
-    border: var(--color-secundario) 2px solid;
     background-color: transparent;
 
     font-family: var(--tipografia-texto);
@@ -570,6 +578,12 @@ button[type=submit] {
 .imagen-filtro{
     background-image: radial-gradient(14px at 50% 50%, black, white);
     background-size: 20px 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .seleccion-horizontal-md{
+        flex-direction: column;    
+    }
 }
 
 @media only screen and (max-width: 700px) {
