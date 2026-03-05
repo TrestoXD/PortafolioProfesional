@@ -28,6 +28,7 @@
             <button class="boton-pc" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="boton-pc" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
             <button class="boton-pc" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="boton-pc" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
             <select class="boton-pc" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -41,6 +42,7 @@
             <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
             <button class="burger-boton-movil" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="burger-boton-movil" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
             <select class="burger-boton-movil" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -60,19 +62,42 @@
     <div class="contenido">
 
         <!-- CONTENIDO PROYECTOS -->
-        <div class="seleccion-vertical">
+        <div class="seleccion-vertical" style="padding: 0;">
             <div class="seleccion-vertical" style="justify-content: space-evenly;">
                 <h1 style="padding: 0;">Proyectos</h1>
                 <p>Texto que aun tengo que escribir...</p>
             </div>
-            <div>
-                <img src="" alt="proyecto1-imagen">
-                <div>
-                    <h4>Nombre:</h4> <p>Proyecto1Nombre</p>
-                    <h4>Descripción:</h4><p>Proyecto1Descripcion</p>
-                    <button>Ver más &gt; </button>
+            
+            <!-- CARTAS DE PROYECTOS -->
+            <div class="seleccion-horizontal" style="padding: 0; border: none;">
+                <div class="proyectos-carta" style="padding: 0; border: none;">
+                    <div class="halftone" style="padding: 0; border: none;">
+                        <img src="./Imagenes/KAREN.png" alt="proyecto1-imagen">
+                    </div>
+                    <div class="proyectos-interior">
+                        <h4>NOMBRE:</h4> <h2>KAREN</h2>
+                        <h4>DESCRIPCIÓN:</h4><p>Karen es un asistente de  control multimedia desarollado en RUST</p>
+                        <h4>ESTADO:</h4><p>En proceso...</p>
+                        <button>Ver más &gt; </button>
+                    </div>
                 </div>
+
+                <!-- VIT ENGINE-->
+                 <div class="proyectos-carta" style="padding: 0; border: none;">
+                    <div class="halftone" style="padding: 0; border-right: none;">
+                        <img src="./Imagenes/DSC00327.JPG" alt="proyecto1-imagen">
+                    </div>
+                    <div class="proyectos-interior">
+                        <h4>NOMBRE:</h4> <h2>VIT ENGINE</h2>
+                        <h4>DESCRIPCIÓN:</h4><p>VIT ENGINE es una engine en 3D desarollada en java usando la libreria lwjgl</p>
+                        <h4>ESTADO:</h4><p>En proceso...</p>
+                        <button>Ver más &gt; </button>
+                    </div>
+                </div>    
             </div>
+            <!--KAREN-->
+            
+
         </div>
 
     </div>

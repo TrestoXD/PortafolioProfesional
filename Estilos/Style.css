@@ -9,6 +9,10 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+    font-family: "Data 70";
+    src: url(./Data\ 70\ Regular.otf);
+}
 
 /* ANIMACION DEL CARRUSEL */
 
@@ -29,7 +33,7 @@
     --color-sexto: #df6d58;
 
     --tipografia-texto: "Special Elite";
-    --tipografia-titulo: "Rubik Vinyl";
+    --tipografia-titulo: "Data 70";
 
     --padding-left: 60px;
 
@@ -287,6 +291,8 @@ a{
     padding-top: 5px;
     padding-right: 10px;
 
+    font-size: large;
+
     text-decoration: none;
     color: var(--color-secundario);
 }
@@ -419,6 +425,7 @@ filter: contrast(16);
 
 mix-blend-mode: multiply;
 }
+
 .sobremi-img-relleno{
     margin: 0;
     padding: 0;
@@ -505,6 +512,61 @@ mix-blend-mode: multiply;
     margin: 0;
 
     font-size: large;
+}
+.proyectos-carta{
+    display: flex;
+    flex-direction: row;
+    width: 49.45%;
+
+}
+.proyectos-carta h2{
+    font-size: 300%;
+}
+.proyectos-carta h4{
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    letter-spacing: 4px;
+
+    font-weight: 900;
+    text-decoration: underline;
+}
+.proyectos-carta > .proyectos-interior{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.halftone{
+    background: transparent;
+    position: relative;
+    filter: saturate(0) brightness(0.7) contrast(2500%);
+    overflow: hidden;
+    transform: translateZ(0);
+}
+.halftone::after{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: -100%;
+    bottom: -100%;
+    background-blend-mode: multiply;
+    background: 
+        radial-gradient(4px 4px, black, white);
+    background-size: 4px 4px;
+    background-position: 0 -3px, -2px 0, 2px 0;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.halftone img{
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 b{
@@ -619,6 +681,10 @@ button[type=submit] {
         --padding-left: 0px;
     }
 
+    .proyectos-carta{
+        width: auto;
+    }
+
     .boton-movil{
         display:inline;
     }
@@ -633,7 +699,7 @@ button[type=submit] {
         padding: 10px;
         margin: 0;
 
-        width: calc(100% - 20px);
+        width: auto;
     }
     .seleccion-horizontal{
         flex-direction: column;

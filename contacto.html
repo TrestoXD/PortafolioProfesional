@@ -20,6 +20,7 @@
             <button class="boton-pc" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="boton-pc" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
             <button class="boton-pc" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="boton-pc" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
             <select class="boton-pc" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -31,6 +32,7 @@
             <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
             <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
             <button class="burger-boton-movil" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="burger-boton-movil" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
             <select class="burger-boton-movil" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
@@ -80,9 +82,15 @@
               <button type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;"> &lt&lt ENVIAR &gt&gt</button>
             </form>
         </div>
-        <div class="seleccion-vertical">
-            <div style="padding: 0;">
-                <section class="phone-img"></section>
+        <div class="seleccion-horizontal">
+            <div style="padding: 0; height: 300px; width: 100%;">
+                <section class="phone-img" style="height: 300px;"></section>
+            </div>
+            <div class="seleccion-vertical pc" style="margin-left: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+                <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
+                <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
             </div>
         </div>
     </div>
