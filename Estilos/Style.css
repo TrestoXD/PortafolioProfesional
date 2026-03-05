@@ -1,29 +1,41 @@
 /* EL DOCUMENTO QUE CONTROLA TODO EL CSS DEL DOCUMENTO! NUFSET! */
-.special-elite-regular {
-  font-family: "Special Elite", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.rubik-vinyl-regular {
-  font-family: "Rubik Vinyl", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
+
+/* FUENTES DE TEXTO */
 @font-face {
     font-family: "Data 70";
     src: url(./Data\ 70\ Regular.otf);
 }
 
-/* ANIMACION DEL CARRUSEL */
-
-@keyframes slide{
-    0%, 22.5% { transform: translateX(0%); }
-    25%, 47.5% { transform: translateX(-33.333%); }
-    50%, 72.5% { transform: translateX(-66.666%); }
-    75%, 97.5% { transform: translateX(-33.333%); }
-    100% { transform: translateX(0%); }
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* LIMPIEZA */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset,
+form, label,option{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: medium;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: var(--tipografia-texto);
+    font-weight: 100;
+}
+
+/* Variables del root */
 :root{
     --color-primario: #f0ebdf ;
     --color-secundario: #001219;
@@ -36,81 +48,6 @@
     --tipografia-titulo: "Data 70";
 
     --padding-left: 60px;
-
-    font-family: var(--tipografia-texto);
-}
-
-html{
-    overflow-x: hidden;
-}
-
-body,h4,h3,h2,h1,p{
-    font-family: var(--tipografia-texto);
-    font-weight: 100;
-
-    font-size: medium;
-}
-
-
-
-/* WIP */
-
-.wip-popup-background{
-    background-color: #0a94963e;
-
-    position: fixed;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 10;
-}
-
-.wip-popup{
-    position: fixed;
-
-    left: calc(50% - 200px);
-    top: calc(50% - 200px);
-
-    background-color: khaki;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    box-shadow: 10px 10px 7px #00000051;
-    transform: rotate(-3deg);
-
-    transition: 0.4s;
-
-    display: block;
-    z-index: 11;
-}
-
-.wip-popup h1{
-    font-size: larger;
-    letter-spacing: 4px;
-}
-
-.wip-popup p{
-    font-size: larger;
-    line-height: 25px;
-}
-
-.wip-popup button{
-    position: fixed;
-    left: 305px;
-    top: 0px;
-
-    background-color: #00000000;
-    border: none;
-}
-
-.wip-popup:hover{
-    transform: rotate(0deg) scale(1.05);
-    box-shadow: 15px 15px 10px #00000054;
-}
-
-.wip-popup:hover button p{
-    font-weight: 900;
 }
 
 /* EL CUERPO PRINCIPAL */
@@ -129,18 +66,14 @@ body{
     margin-bottom: 20px;
 }
 
-.boton-pc{
-    display:flexbox;
+.pc{
+    display: inline;
 }
-.boton-movil{
+.mv{
     display: none;
-    padding: 0;
-}
-.boton-movil h4{
-    content: "&#9776";
 }
 
-.linea-vertical{
+.vl{
     margin: 0;
     display: inline-block;
 
@@ -155,67 +88,8 @@ body{
     min-height: 100%;
 }
 
-/* SOBRE MI */
-
-header{
-    display: flex;
-    flex-direction: row;
-
-    margin: 0;
-    padding-left: var(--padding-left);
-
-    align-items: center;
-
-    border-color: transparent transparent var(--color-secundario) transparent;
-    border-style: solid;
-    border-width: 2px;
-}
-
-header h3{
-    width: 100%;
-    margin: 0;
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-header h4{
-    width: 100px;
-    margin: 0;
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-right: 20px;
-        padding-top: 5px;
-
-    font-weight: 100;
-
-    background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 0.3s ease;
-}
-
-header h4:hover, header h4:focus{
-    background-size: 100% 100%; 
-    font-weight: 900;
-}
-
-header div {
-    width: 100%;
-    height: 40px;
-
-    margin-bottom: 20px;
-    margin-top: 15px;
-    margin-left: 40px;
-    margin-right: 40px;
-
-    text-align: right;
-
-    background-color: transparent;
-
-    align-content: center;
-}
-header div button, header div select{
+/* DEFAULTS */
+.def-button{
     margin: 0;
     padding: 0;
 
@@ -231,7 +105,80 @@ header div button, header div select{
     font-size: medium;
 }
 
-header div button h4, header div select{
+/* HEADER */
+
+.hea{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding-left: var(--padding-left);
+
+    align-items: center;
+
+    border-color: transparent transparent var(--color-secundario) transparent;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.hea-div{
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    text-align: right;
+
+    background-color: transparent;
+
+    align-content: center;
+}
+
+.hea-h4, .hea-h3, .hea-h2, .hea-h1{
+    width: 100px;
+    
+    margin: 0;
+    margin-left: 30px;
+
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
+
+    font-weight: 100;
+
+    background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: 0.3s ease;
+}
+
+.hea-h4:hover, .hea-h3:hover, .hea-h2:hover, .hea-h1:hover{
+    font-weight: 900;    
+
+    background-size: 100% 100%; 
+}
+
+.hea-button, .hea-select{
+    margin: 0;
+    padding: 0;
+
+    height: auto;
+    
+    vertical-align: middle;
+
+    background-color: transparent;
+
+    border: none;
+
+    font-family: var(--tipografia-texto);
+    font-size: medium;    
+}
+
+.hea-button-h4, .hea-select{
     margin: 0;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -243,13 +190,15 @@ header div button h4, header div select{
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    transition: background-size 0.3s ease;
+    transition: 0.3s ease;    
 }
 
-header div button:hover h4, header div button:focus h4, header div select:hover, header div select:focus{
+.hea-button-h4:hover, .hea-select:hover, .hea-button-h4:focus, .hea-select:focus{
     background-size: 100% 100%;
     font-weight: 900;
 }
+
+/* SOBRE MI */
 
 .burger-movil{
     display: flex;
@@ -272,13 +221,24 @@ header div button:hover h4, header div button:focus h4, header div select:hover,
     display: none;
 }
 
-.header-marquee{
+.mar{
+    width: 100%;
+    height: 35px;
+
+    padding-left: 60px;
+
+    align-content: center;
+
+    text-align: right;
+    vertical-align: bottom;
+
+    border-bottom: var(--color-secundario) 2px solid;
     background-color: var(--color-quinto);
 }
 
-marquee{
+.mar-text{
     margin-left: calc( var(--padding-left) - 40px);
-    padding: 6px;
+    padding-top: 5px;
 }
 
 a{
@@ -567,7 +527,7 @@ mix-blend-mode: multiply;
     transform: translateZ(0);
     mix-blend-mode: multiply;
 
-    transition: 0.3s;
+    transition: 0.7s;
 }
 .halftone::after{
     content: '';
@@ -593,7 +553,7 @@ mix-blend-mode: multiply;
     overflow: hidden;
 }
 .halftone:hover{
-    filter: saturate(1) brightness(0.7) contrast(400%);
+    filter: saturate(1) brightness(0.7) contrast(500%);
     transition: 0.1s;
 }
 
@@ -628,6 +588,67 @@ b{
 */
 
 /* SELECCION HORIZONTAL */
+
+/* WIP */
+
+.wip-popup-background{
+    background-color: #0a94963e;
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 10;
+}
+
+.wip-popup{
+    position: fixed;
+
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+
+    background-color: khaki;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 10px 10px 7px #00000051;
+    transform: rotate(-3deg);
+
+    transition: 0.4s;
+
+    display: block;
+    z-index: 11;
+}
+
+.wip-popup h1{
+    font-size: larger;
+    letter-spacing: 4px;
+}
+
+.wip-popup p{
+    font-size: larger;
+    line-height: 25px;
+}
+
+.wip-popup button{
+    position: fixed;
+    left: 305px;
+    top: 0px;
+
+    background-color: #00000000;
+    border: none;
+}
+
+.wip-popup:hover{
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 15px 15px 10px #00000054;
+}
+
+.wip-popup:hover button p{
+    font-weight: 900;
+}
+
 .carrusel{
     --slides: 4;
     --h: 35dvw;
@@ -704,6 +725,14 @@ button[type=submit] {
 }
 
 @media only screen and (max-width: 900px) {
+
+    .mv{
+        display: inline;
+    }
+    .pc{
+        display: none;
+    }
+
     .wip-popup{
         left: calc(50% - 170px);
         top: calc(50% - 200px);
@@ -764,7 +793,7 @@ button[type=submit] {
 
         border-top: var(--color-secundario) 2px solid;
     }
-    .linea-vertical{
+    .vl{
         margin: 0;
         padding: 0;
         display: none;
