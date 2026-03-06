@@ -230,35 +230,60 @@ b{
     background-size: 100% 100%;
     font-weight: 900;
 }
+.hea-burger{
+    --h: calc(100% / 2);
 
-/* SOBRE MI */
-.burger-movil{
     display: flex;
     flex-direction: column;
 
     position: fixed;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     right: 0;
     
-    top: 109px;
+    top: 117px;
 
     height: auto;
+    width: 200px;
 
     background-color: var(--color-primario);
     border-color: var(--color-secundario);
     border-width: var(--border-width);
     border-style: solid;
 
-    display: none;
+    gap: 10px;
+    z-index: 20;
 }
+.hea-burger-button, .hea-burger-select{
+
+
+    color: var(--color-secundario);
+
+    font-family: var(--tipografia-texto);
+
+    border: none;
+
+    background-color: transparent;
+
+    background-image: linear-gradient(var(--color-cuaternario),var(--color-cuaternario));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: 0.3s ease; 
+}
+.hea-burger-button:hover, .hea-burger-select:hover, .hea-burger-button:focus, .hea-burger-select:focus{
+    background-size: 100% 100%;
+    font-weight: 900;
+}
+
+
 
 /* MARQUEE */
 .mar{
     width: 100%;
     height: 35px;
 
-    padding-left: var(--padding-left);
+    padding-left: calc(var(--padding-left) + 4px);
 
     align-content: center;
 
@@ -269,7 +294,6 @@ b{
     background-color: var(--color-quinto);
 }
 .mar-text{
-    padding-left: 4px;
     padding-top: 4px;
 }
 
@@ -381,12 +405,6 @@ b{
     transform: translate(10px, 50px) rotate(0deg) scale(1.1);
     box-shadow: 5px 5px 10px 10px #00000033;
 }
-.con div div p{
-    padding: 0;
-    margin: 0;
-
-    font-size: large;
-}
 
 /* PROYECTOS */
 .proyectos-carta{
@@ -475,33 +493,8 @@ b{
 .img-centro{
     transform: translateX(-25%);
 }
-/*.boton-especial{
-    background-color: var(--color-terciario);
-
-    border-color: var(--color-secundario);
-    border-width: 2px;
-    border-style: solid;
-
-    box-shadow: var(--color-secundario) 6px 6px 0px;
-
-    font-weight: bolder;
-
-    transition: 0.1s;
-}
-.boton-especial:hover{
-    box-shadow: var(--color-secundario) 4px 4px 0px;    
-    transition: 0.1s;
-}
-
-.boton-especial:active{
-        box-shadow: var(--color-secundario) 0px 0px 0px;
-}
-*/
-
-/* SELECCION HORIZONTAL */
 
 /* WIP */
-
 .wip-popup-background{
     background-color: #0a94963e;
 
@@ -512,7 +505,6 @@ b{
 
     z-index: 10;
 }
-
 .wip-popup{
     position: fixed;
 
@@ -531,17 +523,14 @@ b{
     display: block;
     z-index: 11;
 }
-
 .wip-popup h1{
     font-size: larger;
     letter-spacing: 4px;
 }
-
 .wip-popup p{
     font-size: larger;
     line-height: 25px;
 }
-
 .wip-popup button{
     position: fixed;
     left: 305px;
@@ -550,12 +539,10 @@ b{
     background-color: #00000000;
     border: none;
 }
-
 .wip-popup:hover{
     transform: rotate(0deg) scale(1.05);
     box-shadow: 15px 15px 10px #00000054;
 }
-
 .wip-popup:hover button p{
     font-weight: 900;
 }
@@ -579,8 +566,12 @@ button[type=submit] {
 
     font-family: var(--tipografia-texto);
     font-size: large;
-}
 
+    transition: 0.3s ease; 
+}
+button[type=submit]:hover{
+    font-weight: 900;
+}
 /* PAGINA MEDIA */
 @media only screen and (max-width: 1270px) {
     .md{
@@ -649,30 +640,7 @@ button[type=submit] {
         transform: translate(10px, 120px) rotate(0deg) scale(1.1);
         box-shadow: 5px 5px 10px 10px #00000033;
     }
-
-    .burger-movil{
-        display: flex;
-        position: absolute;
-        float: left;
-
-        width: 200px;
-
-        align-items: start;
-        z-index: 99;
-
-        padding: 5px;
-    }
-    .burger-boton-movil{
-        width: 100%;
-    }
-    .burger-movil button h4{
-        font-size: 20px;
-        width: 100%;
-        padding-left: 4px;
-
-        text-align: start;
-    }
-    .burger-movil select{
+    .hea-burger-button, .hea-burger-select{
         display: flex;
         width: 100%;
 
@@ -682,15 +650,5 @@ button[type=submit] {
 
         font-size: 20px;
         text-align: start;
-    }
-    .burger-movil select option{
-        text-align: start;
-        width: 1000px;
-    }
-    .carrusel{
-        --h: 65dvh;
-    }
-    .carrusel-inner{
-        width: calc(var(--slides) * 30%);
     }
 }

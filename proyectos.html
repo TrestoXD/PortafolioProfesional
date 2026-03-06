@@ -43,12 +43,12 @@
         
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
-        <div class="hea-div burger-movil" id="burger">
-            <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
-            <select class="burger-boton-movil" name="IDIOMA">
+        <div class="hea-div hea-burger" id="burger">
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
+            <select class="hea-burger-select" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
                 <option value="català">CATALÀ</option>
@@ -57,9 +57,9 @@
     </header>
 
     <!-- TEXTO EN MOVIMIENTO -->
-    <header class="mar">
+    <section class="mar">
         <marquee class="mar-text">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
-    </header>
+    </section>
 
 
 
@@ -72,11 +72,14 @@
                 <div class="con-div ">
                     <h1 class="con-h1" style="padding: 0; flex-grow: 0;">Proyectos</h1>
                 </div>
-                <div class="sv pc" style="margin-left: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+                <div class="sv pc" style="margin-left: -20px; margin-right: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
                     <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
                     <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
                     <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
                     <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
+                </div>
+                <div class="con-div pc">
+
                 </div>
             </div>
             

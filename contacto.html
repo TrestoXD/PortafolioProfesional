@@ -37,12 +37,12 @@
         
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
-        <div class="hea-div burger-movil" id="burger">
-            <button class="burger-boton-movil" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
-            <button class="burger-boton-movil" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
-            <select class="burger-boton-movil" name="IDIOMA">
+        <div class="hea-div hea-burger" id="burger">
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
+            <select class="hea-burger-select" name="IDIOMA">
                 <option value="castellano">CASTELLANO</option>
                 <option value="english">ENGLISH</option>
                 <option value="català">CATALÀ</option>
@@ -51,25 +51,25 @@
     </header>
 
     <!-- TEXTO EN MOVIMIENTO -->
-    <header class="mar">
+    <section class="mar">
         <marquee class="mar-text">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
-    </header>
+    </section>
 
     
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA WEB -->
     <div class="con">
         <div class="sh">
-            <div class="sv" style=" vertical-align: middle;">
+            <div class="con-div sv" style=" vertical-align: middle;">
                 <div style="border: none;">
-                    <H1 style="text-align: center; vertical-align: middle; padding: 0; font-size: 7vw;">CONTÁCTAME</H1>
+                    <H1 class="con-h1" style="text-align: center; vertical-align: middle; padding: 0; font-size: 7vw;">CONTÁCTAME</H1>
                 </div>
                 <div style="border: none;">
-                    <h2 style="text-decoration: underline;">Ubicación:</h2>
+                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Ubicación:</h2>
                     <p>Barcelona</p>
-                    <h2 style="text-decoration: underline;">Numero de Telefono:</h2>
+                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Numero de Telefono:</h2>
                     <p>+34 621 26 37 63</p>
-                    <h2 style="text-decoration: underline;">Correo Electronico:</h2>
+                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Correo Electronico:</h2>
                     <p>vitominayagonzalez@hotmail.com</p>
                 </div> 
             </div>
@@ -92,19 +92,20 @@
               <input type="email" name="email" required placeholder="Correo electronico*" style="width: calc(100% - 12px)">
               <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100%;"></textarea>
               
-              <button type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;"> &lt&lt ENVIAR &gt&gt</button>
+              <button class="con-button" type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;"> &lt&lt ENVIAR &gt&gt</button>
             </form>
         </div>
         <div class="sh">
-            <div class="halftone" style="height: 300px; width: 100%; padding: 0;">
+            <div class="con-div halftone" style="height: 300px; width: 100%; padding: 0;">
                 <img src="./Imagenes/phone.jpeg" style="width: 100%;">
             </div>
-            <div class="sv pc" style="margin-left: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+            <div class="sv pc" style="margin-left: -20px; margin-right: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
                 <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
             </div>
+            <div class="con-div"></div>
         </div>
     </div>
 
