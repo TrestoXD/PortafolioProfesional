@@ -37,7 +37,10 @@
             </select>
         </div>
 
-        <button class="hea-button mv" id="burger-button" onclick="hamburgesa()"><h4 class="hea-h4">&#9776;</h4></button>
+        <div class="hea-div mv">
+            <button class="hea-button mv" id="burger-button" onclick="hamburgesa()"><h4 class="hea-h4">&#9776;</h4></button>    
+        </div>
+        
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="hea-div burger-movil" id="burger">
@@ -61,14 +64,13 @@
 
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA WEB -->
-    <div class="contenido">
+    <div class="con">
 
         <!-- CONTENIDO SOBRE -->
-        <div class="seleccion-horizontal" style="height: 100%;">
-            
-            <div class="seleccion-vertical" style="border: 0; padding: 0; gap: 0; width: 100%;">
-                <div class="sobremi" style="padding: 0;">
-                    <h1>SOBRE MÍ</h1>
+        <div class="sh">
+            <div class="sv">
+                <div class="con-div sobremi" style="flex-grow: 0;">
+                    <h1 class="con-h1">SOBRE MÍ</h1>
                     <div class="sobremi-datos" style="border: none;">
                         <h4 style="margin-top: 4px;">NACIMIENTO:</h4>
                         <p><b>FECHA:</b> 18 DE ABRIL DE 2008</p>
@@ -80,13 +82,13 @@
                         <p><b>OCUPACIÓN:</b> TRABAJANDO </p>
                     </div>
                 </div>
-                <div class="halftone" style="padding: 0; width:auto; height: 700px; border-top: none; box-sizing: border-box;">
+                <div class="con-div halftone" style="padding: 0; width:auto; height: 700px;">
                     <img src="./Imagenes/fotomia.jpg" alt="fotomia">
                 </div>
             </div>
-            <div class="seleccion-vertical" style="width: 100%; border: none; padding: 0;">
-                <div style="height: 100%;">
-                    <h2>DESCRIPCIÓN:</h2>
+            <div class="sv">
+                <div class="con-div">
+                    <h2 class="con-h2">DESCRIPCIÓN:</h2>
                     <p style="font-size: 20px;">
     Mi nombre es Vito Minaya González, fotógrafo aficionado apasionado de capturar 
     momentos extraordinarios que suceden en mi vida cotidiana. Mientras que la 
@@ -96,48 +98,10 @@
     construidas para el rendimiento y la accesibilidad. 
                     </p>
                 </div>
-                <div style="height: 100%;">
-                    <h2>LENGUAJES DE PROGRAMACIÓN:</h2>
-                    <ul>
-                        <li><a href="https://es.wikipedia.org/wiki/JavaScript">JAVASCRIPT</a></li>
-                        <li><a href="https://www.python.org/">PYTHON</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)">C</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/C%2B%2B">C++</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/C_Sharp">C#</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)">JAVA</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)">RUST</a></li>
-                    </ul>
-                </div>
-                <div style="height: 100%;">
-                    <h2>SOFT SKILLS:</h2>
-                        <ul style="overflow-wrap: normal; word-break:keep-all;">
-                            <li><a>Empatía y Compasión</a></li>
-                            <li><a>Resiliencia y Voluntad</a></li>
-                            <li><a>Responsabilidad</a></li>
-                            <li><a>Flexibilidad y polivalencia</a></li>
-                            <li><a>Pensamiento Círtico y habilidades analíticas</a></li>
-                            <li><a>Gestuón de tiempo</a></li>
-                            <li><a>Iniciativa y autonomía</a></li>
-                        </ul>
-                </div>
-            </div>
-            <!--
-            <div class="seleccion-vertical" style="border: none; padding: 0; width: 100%; height: 100%; display: flex; flex-direction: column;">
-                <div style="flex-grow: 1; height:100% ">
-                    <h2>DESCRIPCIÓN:</h2>
-                    <p style="font-size: 20px;">
-    Mi nombre es Vito Minaya González, fotógrafo aficionado apasionado de capturar 
-    momentos extraordinarios que suceden en mi vida cotidiana. Mientras que la 
-    fotografía me encanta, mi trabajo a tiempo completo es en la <b>informática</b> y la <b>ciencia</b>. 
-    Creyendo que entender las bases técnicas lleva a hacer las cosas mejor, lo que me 
-    motiva a crear experiencias que no solo se vean atractivas, sino que estén meticulosamente 
-    construidas para el rendimiento y la accesibilidad. 
-                    </p>
-                </div>   
-                <div class="seleccion-horizontal-md" style="padding: 0;  border: none; gap: 20px; display: flex; flex-grow: 1; height: auto">
-                    <div style="display: flex; flex-direction: column; height: 100%;">
-                        <h2>LENGUAJES DE PROGRAMACIÓN:</h2>
-                        <ul>
+                <div class="sh md">
+                    <div class="con-div">
+                        <h2 class="con-h2">LENGUAJES DE PROGRAMACIÓN:</h2>
+                        <ul class="con-ul">
                             <li><a href="https://es.wikipedia.org/wiki/JavaScript">JAVASCRIPT</a></li>
                             <li><a href="https://www.python.org/">PYTHON</a></li>
                             <li><a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)">C</a></li>
@@ -147,24 +111,24 @@
                             <li><a href="https://es.wikipedia.org/wiki/Rust_(lenguaje_de_programaci%C3%B3n)">RUST</a></li>
                         </ul>
                     </div>
-                    <div style="display: flex; flex-direction: column; height: 100%;">
-                        <h2>SOFT SKILLS:</h2>
-                        <ul style="overflow-wrap: normal; word-break:keep-all;">
-                            <li><a>Empatía y Compasión</a></li>
-                            <li><a>Resiliencia y Voluntad</a></li>
-                            <li><a>Responsabilidad</a></li>
-                            <li><a>Flexibilidad y polivalencia</a></li>
-                            <li><a>Pensamiento Círtico y habilidades analíticas</a></li>
-                            <li><a>Gestuón de tiempo</a></li>
-                            <li><a>Iniciativa y autonomía</a></li>
-                        </ul>
-                    </div>
+                    <div class="con-div">
+                        <h2 class="con-h2">SOFT SKILLS:</h2>
+                            <ul class="con-ul">
+                                <li><a>Empatía y Compasión</a></li>
+                                <li><a>Resiliencia y Voluntad</a></li>
+                                <li><a>Responsabilidad</a></li>
+                                <li><a>Flexibilidad y polivalencia</a></li>
+                                <li><a>Pensamiento Círtico y habilidades analíticas</a></li>
+                                <li><a>Gestuón de tiempo</a></li>
+                                <li><a>Iniciativa y autonomía</a></li>
+                            </ul>
+                    </div>    
                 </div>
                 
-                <div class="halftone" style="padding: 0; max-height: 422px; min-height: 50px; width: 200px; overflow: hidden;">
-                    <img src="./Imagenes/DSC00325.JPG">
+                <div class="con-div halftone" style="padding: 0; overflow: hidden;">
+                    <img src="./Imagenes/DSC00325.JPG" style="">
                 </div>
-            </div>-->
+            </div>
         </div>
         <!--<div class="carrusel">
             <div class="carrusel-inner">
@@ -184,8 +148,8 @@
         </div>-->
 
         <!-- CONTENIDO ESTUDIOS -->
-        <div class="seleccion-horizontal">
-            <div>
+        <div class="sh">
+            <div class="con-div">
                 <h2>ESTUDIOS</h2>
                 <h3><a href="https://inslagarrotxa.cat/">Instituto de educación secundaria la Garrotxa.</a></h3>
                 <p>1-4 ESO</p>
@@ -193,11 +157,14 @@
                 <h3><a href="https://www.monlau.com/formacio-professional/?lang=ca">Centro de estudios Monlau</a></h3>
                 <p>CFGM en Sistemas microinformáticos y redes.</p>
             </div>
-            <div class="seleccion-vertical pc" style="margin-left: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+            <div class="sv pc" style="margin-left: -20px; margin-right: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
                 <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
                 <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
+            </div>
+            <div class="con-div">
+
             </div>
         </div>
     </div>
