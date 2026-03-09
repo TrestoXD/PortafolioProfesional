@@ -26,14 +26,14 @@
         
         <!-- MENU DE LA PAGINA WEB EN ORDENADOR -->
         <div class="hea-div pc">
-            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4">SOBRE MI</h4></button>
-            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4">PROYECTOS</h4></button>
-            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4">CONTACTO</h4></button>
-            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4">GALERIA</h4></button>
-            <select name="IDIOMA" class="hea-select">
-                <option value="castellano" class="hea-h4">CASTELLANO</option>
-                <option value="english" class="hea-h4">ENGLISH</option>
-                <option value="catala" class="hea-h4">CATALÀ</option>
+            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4" id="221">SOBRE MI</h4></button>
+            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4" id="222">PROYECTOS</h4></button>
+            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4" id="223">CONTACTO</h4></button>
+            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4" id="224">GALERIA</h4></button>
+            <select id="idioma" name="IDIOMA" class="hea-select">
+                <option value="castellano" id="es" class="hea-h4">CASTELLANO</option>
+                <option value="english" id="en" class="hea-h4">ENGLISH</option>
+                <option value="catala" id="ca" class="hea-h4">CATALÀ</option>
             </select>
         </div>
 
@@ -44,21 +44,21 @@
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="hea-div hea-burger" id="burger">
-            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
-            <select class="hea-burger-select" name="IDIOMA">
-                <option value="castellano">CASTELLANO</option>
-                <option value="english">ENGLISH</option>
-                <option value="català">CATALÀ</option>
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')" id="225"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')" id="226"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')" id="227"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')" id="228"><h4>GALERIA</h4></button>
+            <select id="idioma" class="hea-burger-select" name="IDIOMA">
+                <option value="castellano" id="es">CASTELLANO</option>
+                <option value="english" id="en">ENGLISH</option>
+                <option value="català" id="ca">CATALÀ</option>
             </select>
         </div>
     </header>
 
     <!-- TEXTO EN MOVIMIENTO -->
     <section class="mar">
-        <marquee class="mar-text">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
+        <marquee class="mar-text" id="211">¡Bienvenido! a mi portafolio electrónico. Este es un espacio donde comparto mis proyectos; explóralos cuanto quieras. Ante cualquier duda o interés, puedes contactarme. ¡Sigue siempre adelante!</marquee>
     </section>
 
 
@@ -70,9 +70,9 @@
             <!-- CONTENIDO SOBRE MI -->
             <div class="sv">
                 <div class="con-div sobremi" style="flex-grow: 0;">
-                    <h1 class="con-h1">SOBRE MÍ</h1>
+                    <h1 class="con-h1" id="011">SOBRE MÍ</h1>
                     <div class="sobremi-datos" style="border: none;">
-                        <h4 style="margin-top: 4px;">NACIMIENTO:</h4>
+                        <h4 style="margin-top: 4px;" >NACIMIENTO:</h4>
                         <p><b>FECHA:</b> 18 DE ABRIL DE 2008</p>
                         <p><b>LUGAR:</b> BARCELONA</p>
                         <p><b>SEXO:</b> HOMBRE</p>
@@ -89,11 +89,11 @@
             <div class="sv">
                 <!-- DESCRIPCIÓN -->
                 <div class="con-div">
-                    <h2 class="con-h2">DESCRIPCIÓN:</h2>
-                    <p style="font-size: 20px;">
+                    <h2 class="con-h2" id="021">DESCRIPCIÓN:</h2>
+                    <p style="font-size: 20px;" id="111">
     Mi nombre es Vito Minaya González, fotógrafo aficionado apasionado de capturar 
     momentos extraordinarios que suceden en mi vida cotidiana. Mientras que la 
-    fotografía me encanta, mi trabajo a tiempo completo es en la <b>informática</b> y la <b>ciencia</b>. 
+    fotografía me encanta, mi trabajo a tiempo completo es en la informática y la ciencia. 
     Creyendo que entender las bases técnicas lleva a hacer las cosas mejor, lo que me 
     motiva a crear experiencias que no solo se vean atractivas, sino que estén meticulosamente 
     construidas para el rendimiento y la accesibilidad. 
@@ -103,7 +103,7 @@
                 <!-- CONOCIMIENTOS-->
                 <div class="sh md">
                     <div class="con-div">
-                        <h2 class="con-h2">LENGUAJES DE PROGRAMACIÓN:</h2>
+                        <h2 class="con-h2" id="022">LENGUAJES DE PROGRAMACIÓN:</h2>
                         <ul class="con-ul">
                             <li><a href="https://es.wikipedia.org/wiki/JavaScript">JAVASCRIPT</a></li>
                             <li><a href="https://www.python.org/">PYTHON</a></li>
@@ -115,15 +115,15 @@
                         </ul>
                     </div>
                     <div class="con-div">
-                        <h2 class="con-h2">SOFT SKILLS:</h2>
+                        <h2 class="con-h2" id="023">SOFT SKILLS:</h2>
                             <ul class="con-ul">
-                                <li><a>Empatía y Compasión</a></li>
-                                <li><a>Resiliencia y Voluntad</a></li>
-                                <li><a>Responsabilidad</a></li>
-                                <li><a>Flexibilidad y polivalencia</a></li>
-                                <li><a>Pensamiento Círtico y habilidades analíticas</a></li>
-                                <li><a>Gestuón de tiempo</a></li>
-                                <li><a>Iniciativa y autonomía</a></li>
+                                <li><a id="121">Empatía y Compasión</a></li>
+                                <li><a id="122">Resiliencia y Voluntad</a></li>
+                                <li><a id="123">Responsabilidad</a></li>
+                                <li><a id="124">Flexibilidad y polivalencia</a></li>
+                                <li><a id="125">Pensamiento Círtico y habilidades analíticas</a></li>
+                                <li><a id="126">Gestuón de tiempo</a></li>
+                                <li><a id="127">Iniciativa y autonomía</a></li>
                             </ul>
                     </div>
                 </div>
@@ -138,12 +138,12 @@
         <!-- CONTENIDO ESTUDIOS -->
         <div class="sh">
             <div class="con-div">
-                <h2>ESTUDIOS</h2>
-                <h3><a href="https://inslagarrotxa.cat/">Instituto de educación secundaria la Garrotxa.</a></h3>
+                <h2 id="024" class="con-h2">ESTUDIOS</h2>
+                <h3><a href="https://inslagarrotxa.cat/" id="128">Instituto de educación secundaria la Garrotxa.</a></h3>
                 <p>1-4 ESO</p>
                 <hr style="border-color: var(--color-secundario); border-style: solid;">
-                <h3><a href="https://www.monlau.com/formacio-professional/?lang=ca">Centro de estudios Monlau</a></h3>
-                <p>CFGM en Sistemas microinformáticos y redes.</p>
+                <h3><a href="https://www.monlau.com/formacio-professional/?lang=ca" id="129">Centro de estudios Monlau</a></h3>
+                <p id="112">CFGM en Sistemas microinformáticos y redes.</p>
             </div>
             <div class="sv pc" style="margin-left: -20px; margin-right: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
                 <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
@@ -176,5 +176,6 @@
     <script src="./Codigos/WIP.js"></script>
     <script src="./Codigos/burger.js"></script>
     <script src="./Codigos/mar.js"></script>
+    <script src="./Codigos/idiomas.js"></script>
     
 </html>
