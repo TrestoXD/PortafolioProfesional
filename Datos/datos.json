@@ -131,7 +131,69 @@
             ]}
         ]},
         {"en":[
-
+            {"0": [
+                {"1":[
+                    {"1":["WHO AM I"]}
+                ]},
+                {"2":[
+                    {"1":["DESCRIPTION:"]},
+                    {"2":["PROGRAMING LENGUAGES:"]},
+                    {"3":["SOFT SKILLS:"]},
+                    {"4":["STUDIES:"]}
+                ]},
+                {"4":[
+                    {"1":["BIRTH:"]},
+                    {"2":["STATES:"]}
+                ]}
+            ]},
+            {"1": [
+                {"1":[
+                    {"1":["My name is Vito Minaya González, an amateur photographer passionate to capture extraordinary moments that happen in my daily life. While I love photography, my full-time work is in computer science and science. Beliving that undestanding the thecnical bases leads to doing thigs better, which motivates me to create experiences that are not only attractive, but that are meticulously built for performance and accessibility."]},
+                    {"2":["CFGM in Microcomputer systems & Networks."]}
+                ]},
+                {"2":[
+                    {"1":["Empathy and Compassion"]},
+                    {"2":["Resilience and Willpower"]},
+                    {"3":["Responsiblity"]},
+                    {"4":["Flexibility and versatility"]},
+                    {"5":["Critical thinking and Analytical skills"]},
+                    {"6":["Time management"]},
+                    {"7":["Initiative and Autonomy"]},
+                    {"8":["La Garrotxa Secondary Education Institution"]},
+                    {"9":["Study Center Monlau"]}
+                ]},
+                {"3":[
+                    {"1":["DATE: "]},
+                    {"2":["PLACE: "]},
+                    {"3":["GENDER: "]},
+                    {"4":["NATIONALITY: "]},
+                    {"5":["ACADEMIC STATE: "]},
+                    {"6":["OCUPACIÓ: "]}
+                ]},
+                {"4":[
+                    {"1":["APRIL 18TH OF 2008"]},
+                    {"2":["BARCELONA"]},
+                    {"3":["MAN"]},
+                    {"4":["SPANISH"]},
+                    {"5":["STUDENT"]},
+                    {"6":["WORKING"]}
+                ]}
+            ]},
+            {"2": [
+                {"1":[
+                    {"1":["Welcome to my electronic portfolio. This is a space where I share my projects; explore them as you want. Before any doubt or interest, you can contact me. Keep moving Forward!"]}
+                ]},
+                {"2":[
+                    {"1":["WHO AM I"]},
+                    {"2":["PROJECTS"]},
+                    {"3":["CONTACT"]},
+                    {"4":["GALLERY"]},
+                    {"5":["WHO AM I"]},
+                    {"6":["PROJECTS"]},
+                    {"7":["CONTACT"]},
+                    {"8":["GALLERY"]}
+                ]}
+            ]}
         ]}
     ]},
 
