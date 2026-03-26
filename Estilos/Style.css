@@ -60,6 +60,7 @@ body{
 
     background-color: var(--color-primario);
     background-size: 40%;
+    overflow-x: hidden;
 }
 .pc{
     display: inline;
