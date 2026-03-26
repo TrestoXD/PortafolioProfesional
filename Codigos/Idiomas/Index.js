@@ -15,10 +15,11 @@
 // Hueco disponible empezando por 1
 
 // VARIABLES
-let idioma = 'es'
 let idiomas = ['es','ca','en'];
 
 let selectmenu = document.getElementsByTagName('select');
+
+cambiaridioma(localStorage.getItem("idioma"))
 
 // CODIGO DE IDIOMA
 selectmenu[0].addEventListener("change", () => revisaridioma(selectmenu[0].value));
@@ -27,11 +28,12 @@ selectmenu[0].addEventListener("change", () => revisaridioma(selectmenu[0].value
 function revisaridioma(actual){
     console.log("El idioma actual es: " + actual)
     cambiaridioma(actual);
+    localStorage.setItem("idioma", actual);
     return(actual);
 }
 
 function cambiaridioma(acutal){
-    console.log("cambiando idioma...");
+    console.log("cambiando idioma a..." + acutal);
     if(acutal == "castellano"){
         cambiartexto('es');
     }

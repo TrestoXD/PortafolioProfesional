@@ -20,14 +20,14 @@
         
         <!-- MENU DE LA PAGINA WEB EN ORDENADOR -->
         <div class="hea-div pc">
-            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4">SOBRE MI</h4></button>
-            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4">PROYECTOS</h4></button>
-            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4">CONTACTO</h4></button>
-            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4">GALERIA</h4></button>
+            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4" id="221">SOBRE MI</h4></button>
+            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4" id="222">PROYECTOS</h4></button>
+            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4" id="223">CONTACTO</h4></button>
+            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4" id="224">GALERIA</h4></button>
             <select name="IDIOMA" class="hea-select">
-                <option value="castellano" class="hea-h4">CASTELLANO</option>
-                <option value="english" class="hea-h4">ENGLISH</option>
-                <option value="catala" class="hea-h4">CATALÀ</option>
+                <option value="castellano" id="es" class="hea-h4">CASTELLANO</option>
+                <option value="english" id="en" class="hea-h4">ENGLISH</option>
+                <option value="catala" id="ca" class="hea-h4">CATALÀ</option>
             </select>
         </div>
 
@@ -38,21 +38,21 @@
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="hea-div hea-burger" id="burger">
-            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')" id="225"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')" id="226"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')" id="227"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')" id="228"><h4>GALERIA</h4></button>
             <select class="hea-burger-select" name="IDIOMA">
-                <option value="castellano">CASTELLANO</option>
-                <option value="english">ENGLISH</option>
-                <option value="català">CATALÀ</option>
+                <option value="castellano" id="es">CASTELLANO</option>
+                <option value="english" id="en">ENGLISH</option>
+                <option value="català" id="ca">CATALÀ</option>
             </select>
         </div>
     </header>
 
     <!-- TEXTO EN MOVIMIENTO -->
     <section class="mar">
-        <marquee class="mar-text">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
+        <marquee class="mar-text" id="211">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
     </section>
 
     
@@ -62,14 +62,14 @@
         <div class="sh">
             <div class="con-div sv" style=" vertical-align: middle;">
                 <div style="border: none;">
-                    <H1 class="con-h1" style="text-align: center; vertical-align: middle; padding: 0; font-size: 7vw;">CONTÁCTAME</H1>
+                    <H1 id="011" class="con-h1" style="text-align: center; vertical-align: middle; padding: 0; font-size: 7vw;">CONTÁCTAME</H1>
                 </div>
                 <div style="border: none;">
-                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Ubicación:</h2>
+                    <h2 id="021" class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Ubicación:</h2>
                     <p>Barcelona</p>
-                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Numero de Telefono:</h2>
+                    <h2 id="022" class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Número de Teléfono:</h2>
                     <p>+34 621 26 37 63</p>
-                    <h2 class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Correo Electronico:</h2>
+                    <h2 id="023" class="con-h2" style="text-decoration: underline; padding-bottom: 0;">Correo Electronico:</h2>
                     <p>vitominayagonzalez@hotmail.com</p>
                 </div> 
             </div>
@@ -88,11 +88,11 @@
             <form action="https://api.web3forms.com/submit" method="POST" style="gap: 10px; display: flex; flex-direction: column; width: 100%; height: auto;">
               <input type="hidden" name="access_key" value="4dc4f21f-e515-4036-9c17-895cee522206">
               
-              <input type="text" name="name" required placeholder="Nombre*" style="width: calc(100% - 12px)">
-              <input type="email" name="email" required placeholder="Correo electronico*" style="width: calc(100% - 12px)">
-              <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100%;"></textarea>
+              <input type="text" name="name" required placeholder="Nombre*" id="231" style="width: calc(100% - 12px)">
+              <input type="email" name="email" required placeholder="Correo electronico*" id="232" style="width: calc(100% - 12px)">
+              <textarea name="message" required placeholder="Mensaje...*" style="max-width: calc(100% - 12px); min-width: calc(100% - 12px); height: 100%;" id="233"></textarea>
               
-              <button class="con-button" type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;"> &lt&lt ENVIAR &gt&gt</button>
+              <button class="con-button" type="submit" style="padding: 10px; border: var(--color-secundario) 2px solid; background-color: transparent; font-family: var(--tipografia-texto); font-size: large;" id="229"> &lt&lt ENVIAR &gt&gt</button>
             </form>
         </div>
         <div class="sh">
@@ -124,5 +124,6 @@
     <script src="./Codigos/WIP.js"></script>
     <script src="./Codigos/burger.js"></script>
     <script src="./Codigos/mar.js"></script>
-    
+    <script src="./Codigos/Idiomas/Contacto.js"></script>
+
 </html>

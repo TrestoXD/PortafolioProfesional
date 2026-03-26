@@ -25,15 +25,15 @@
         <h4 class="hea-h4">Vito Minaya González</h4>
         
         <!-- MENU DE LA PAGINA WEB EN ORDENADOR -->
-        <div class="hea-div pc">
-            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4">SOBRE MI</h4></button>
-            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4">PROYECTOS</h4></button>
-            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4">CONTACTO</h4></button>
-            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4">GALERIA</h4></button>
-            <select name="IDIOMA" class="hea-select">
-                <option value="castellano" class="hea-h4">CASTELLANO</option>
-                <option value="english" class="hea-h4">ENGLISH</option>
-                <option value="catala" class="hea-h4">CATALÀ</option>
+        <div class="hea-div">
+            <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4" id="221">SOBRE MI</h4></button>
+            <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4" id="222">PROYECTOS</h4></button>
+            <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4" id="223">CONTACTO</h4></button>
+            <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4" id="224">GALERIA</h4></button>
+            <select id="idioma" name="IDIOMA" class="hea-select">
+                <option value="castellano" id="es" class="hea-h4">CASTELLANO</option>
+                <option value="english" id="en" class="hea-h4">ENGLISH</option>
+                <option value="catala" id="ca" class="hea-h4">CATALÀ</option>
             </select>
         </div>
 
@@ -44,21 +44,21 @@
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="hea-div hea-burger" id="burger">
-            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')"><h4>SOBRE MI</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')"><h4>PROYECTOS</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')"><h4>CONTACTO</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')"><h4>GALERIA</h4></button>
-            <select class="hea-burger-select" name="IDIOMA">
-                <option value="castellano">CASTELLANO</option>
-                <option value="english">ENGLISH</option>
-                <option value="català">CATALÀ</option>
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')" id="225"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')" id="226"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')" id="227"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')" id="228"><h4>GALERIA</h4></button>
+            <select id="idioma" class="hea-burger-select" name="IDIOMA">
+                <option value="castellano" id="es">CASTELLANO</option>
+                <option value="english" id="en">ENGLISH</option>
+                <option value="català" id="ca">CATALÀ</option>
             </select>
         </div>
     </header>
 
     <!-- TEXTO EN MOVIMIENTO -->
     <section class="mar">
-        <marquee class="mar-text">¡Bienvenido! a mi portafolio electronico, Este es un espacio donde comparto mis proyectos, exploralos cuanto quieras a cualquier duda o interés, puedes contactame</marquee>
+        <marquee class="mar-text" id="211">¡Bienvenido! a mi portafolio electrónico. Este es un espacio donde comparto mis proyectos; explóralos cuanto quieras. Ante cualquier duda o interés, puedes contactarme. ¡Sigue siempre adelante!</marquee>
     </section>
 
 
@@ -151,5 +151,6 @@
     <script src="./Codigos/WIP.js"></script>
     <script src="./Codigos/burger.js"></script>
     <script src="./Codigos/mar.js"></script>
-    
+    <script src="./Codigos/Idiomas/Proyectos.js"></script>
+
 </html>
