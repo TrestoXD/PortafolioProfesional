@@ -409,6 +409,17 @@ b{
 }
 
 /* PROYECTOS */
+.proyectos-sh{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    text-align: justify;
+
+    flex-grow: 1;
+    
+}
+
 .proyectos-carta{
     display: flex;
     flex-direction: row;
