@@ -70,6 +70,15 @@ body{
 }
 .mv{
     display: none;
+
+    width: 100%;
+    height: 40px;
+
+    text-align: right;
+
+    background-color: transparent;
+
+    align-content: center;
 }
 .vl{
     display: inline-block;
@@ -600,6 +609,12 @@ button[type=submit] {
 button[type=submit]:hover{
     font-weight: 900;
 }
+#burger{
+    display: none;
+}
+#pc{
+    display: block;
+}
 /* PAGINA MEDIA */
 @media only screen and (max-width: 1270px) {
     .md{
@@ -624,9 +639,10 @@ button[type=submit]:hover{
         --padding-left: 0px;
     }
     .mv{
-        display: inline;
+        justify-content: end;
+        display: block;
     }
-    .pc{
+    .pc, #pc{
         display: none;
     }
     .vl{
@@ -678,15 +694,19 @@ button[type=submit]:hover{
         transform: translate(10px, 120px) rotate(0deg) scale(1.1);
         box-shadow: 5px 5px 10px 10px #00000033;
     }
-    .hea-burger-button, .hea-burger-select{
-        display: flex;
-        width: 100%;
+    .hea-burger-button, .hea-burger-select, #burger{
+        box-sizing: border-box;
+        display: block;
+        width: 90%;
+        gap: 0px;
 
         padding: 0;
         margin: 0;
+        padding-left: 4px;
         padding-top: 4px;
+        padding-bottom: 4px;
 
         font-size: 20px;
-        text-align: start;
+        text-align: end;
     }
 }
