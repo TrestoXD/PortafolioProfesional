@@ -94,10 +94,12 @@ function cambiartexto(entry){
         document.getElementById("222").innerText = "PROYECTOS"
         document.getElementById("223").innerText = "CONTACTO"
         document.getElementById("224").innerText = "GALERIA"
-        document.getElementById("225").innerText = "SOBRE MI"
-        document.getElementById("226").innerText = "PROYECTOS"
-        document.getElementById("227").innerText = "CONTACTO"
-        document.getElementById("228").innerText = "GALERIA"
+        document.getElementById("225").innerText = "PLANES"
+        document.getElementById("226").innerText = "SOBRE MI"
+        document.getElementById("227").innerText = "PROYECTOS"
+        document.getElementById("228").innerText = "CONTACTO"
+        document.getElementById("229").innerText = "GALERIA"
+        document.getElementById("2210").innerText = "PLANES"
     }
     else if (entry == 'ca'){
         
@@ -147,10 +149,12 @@ function cambiartexto(entry){
         document.getElementById("222").innerText = "PROJECTES"
         document.getElementById("223").innerText = "CONTACTE"
         document.getElementById("224").innerText = "GALERIA"
-        document.getElementById("225").innerText = "QUI SOC"
-        document.getElementById("226").innerText = "PROJECTES"
-        document.getElementById("227").innerText = "CONTACTE"
-        document.getElementById("228").innerText = "GALERIA"
+        document.getElementById("225").innerText = "PLANS"
+        document.getElementById("226").innerText = "QUI SOC"
+        document.getElementById("227").innerText = "PROJECTES"
+        document.getElementById("228").innerText = "CONTACTE"
+        document.getElementById("229").innerText = "GALERIA"
+        document.getElementById("2210").innerText = "PLANS"
 
     }else{
         
@@ -200,9 +204,11 @@ function cambiartexto(entry){
         document.getElementById("222").innerText = "PROJECTS"
         document.getElementById("223").innerText = "CONTACT"
         document.getElementById("224").innerText = "GALLERY"
-        document.getElementById("225").innerText = "ABOUT ME"
-        document.getElementById("226").innerText = "PROJECTS"
-        document.getElementById("227").innerText = "CONTACT"
-        document.getElementById("228").innerText = "GALLERY"
+        document.getElementById("225").innerText = "PLANS"
+        document.getElementById("226").innerText = "ABOUT ME"
+        document.getElementById("227").innerText = "PROJECTS"
+        document.getElementById("228").innerText = "CONTACT"
+        document.getElementById("229").innerText = "GALLERY"
+        document.getElementById("2210").innerText = "PLANS"
     }
 }

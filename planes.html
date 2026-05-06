@@ -25,12 +25,13 @@
         <h4 class="hea-h4">Vito Minaya González</h4>
         
         <!-- MENU DE LA PAGINA WEB EN ORDENADOR -->
-        <div class="hea-div pc">
+        <div class="hea-div">
             <button onclick="window.open('./index.html', '_self')" class="hea-button"><h4 class="hea-h4" id="221">SOBRE MI</h4></button>
             <button onclick="window.open('./proyectos.html', '_self')" class="hea-button"><h4 class="hea-h4" id="222">PROYECTOS</h4></button>
             <button onclick="window.open('./contacto.html', '_self')" class="hea-button"><h4 class="hea-h4" id="223">CONTACTO</h4></button>
             <button onclick="window.open('./galeria.html', '_self')" class="hea-button"><h4 class="hea-h4" id="224">GALERIA</h4></button>
-            <select name="IDIOMA" class="hea-select">
+            <button onclick="window.open('./planes.html', '_self')" class="hea-button"><h4 class="hea-h4" id="225">PLANES</h4></button>
+            <select id="idioma" name="IDIOMA" class="hea-select">
                 <option value="castellano" id="es" class="hea-h4">CASTELLANO</option>
                 <option value="english" id="en" class="hea-h4">ENGLISH</option>
                 <option value="catala" id="ca" class="hea-h4">CATALÀ</option>
@@ -44,11 +45,12 @@
         
         <!-- MENU DE LA PAGINA WEB EN EL MOVIL -->
         <div class="hea-div hea-burger" id="burger">
-            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')" id="225"><h4>SOBRE MI</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')" id="226"><h4>PROYECTOS</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')" id="227"><h4>CONTACTO</h4></button>
-            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')" id="228"><h4>GALERIA</h4></button>
-            <select class="hea-burger-select" name="IDIOMA">
+            <button class="hea-burger-button" onclick="window.open('./index.html', '_self')" id="226"><h4>SOBRE MI</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./proyectos.html', '_self')" id="227"><h4>PROYECTOS</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./contacto.html', '_self')" id="228"><h4>CONTACTO</h4></button>
+            <button class="hea-burger-button" onclick="window.open('./galeria.html', '_self')" id="229"><h4>GALERIA</h4></button>
+            <button onclick="window.open('./planes.html', '_self')" class="hea-button"><h4 class="hea-h4" id="2210">PLANES</h4></button>
+            <select id="idioma" class="hea-burger-select" name="IDIOMA">
                 <option value="castellano" id="es">CASTELLANO</option>
                 <option value="english" id="en">ENGLISH</option>
                 <option value="català" id="ca">CATALÀ</option>
@@ -68,54 +70,73 @@
 
         <!-- CONTENIDO SOBRE -->
         <div>
-            <h2 class="con-h2">EN QUE ME QUIERO ESPECIALIZAR</h2>
-            <p>En mi caso hablando de especializaciones más importantes como grados superiores y grados universitarios quiero especializarme a pronto en el desarollo de aplicaciones Multiplataforma seguido de esto una ingenieria en biomedicina.</p>
-            <hr>
-            <h2 class="con-h2">ITINERARIO PARA MI FORMACION FUTURA</h2>
-            <table style="border: 2px solid ; width: 100%;">
-                <tr>
-                    <TH style="border: 2px solid ;">Formacion Complementaria</TH>
-                    <th style="border: 2px solid ;">Tipo de formación</th>
-                    <th style="border: 2px solid ;">Tiempo y coste</th>
-                    <th style="border: 2px solid ;">Donde se puede cursar</th>
-                </tr>
-                <tr>
-                    <th style="border: 2px solid ;">CFGS en Aplicaciones Multiplataforma</th>
-                    <th style="border: 2px solid ;">Concertada</th>
-                    <th style="border: 2px solid ;">2 cursos escolares</th>
-                    <th style="border: 2px solid ;">Centro o escuela</th>
-                </tr>
-                <tr>  
-                    <th style="border: 2px solid ;">Grado universitario en Biomedicina</th>
-                    <th style="border: 2px solid ;">Privada o Publica</th>
-                    <th style="border: 2px solid ;">4 / 3 Cursos escolares</th>
-                    <th style="border: 2px solid ;">Universidad</th>
-                </tr>
-                <tr>
-                    <th style="border: 2px solid ;">Certificado en COBOL</th>
-                    <th style="border: 2px solid ;">Certificado profesional, curso privado</th>
-                    <th style="border: 2px solid ;">A especializar</th>
-                    <th style="border: 2px solid ;">Plataforma Online</th>
-                </tr>
-            </table>
-            <hr>
-            <div>
+            <div class="sh">
+                <DIV class="con-div" style="width: 65%;">
+                    <h2 class="con-h2">EN QUE ME QUIERO ESPECIALIZAR</h2>
+                    <p style="font-size: 20px;">En mi caso hablando de especializaciones más importantes como grados superiores y grados universitarios quiero especializarme a pronto en el desarollo de aplicaciones Multiplataforma seguido de esto una ingenieria en biomedicina.</p>
+                </DIV>
+                <div class="con-div">
                 <h2 class="con-h2">PLAN DE PROMOCION PERSONAL</h2>
-                <p>Este apartado suele dejarse en cuenta pero es vastante importante, uno debe saber como mostrarse y para ello he pensaod en mejorar a futuro algunas cosas:</p>
+                <p style="font-size: 20px;">Este apartado suele dejarse en cuenta pero es vastante importante, uno debe saber como mostrarse y para ello he pensaod en mejorar a futuro algunas cosas:</p>
                 <ul class="con-ul">
-                    <li>Mejorar el perfil de Linkedin, añadiendo nueva finromacion.</li>
-                    <li>Mejorar este mismo portafiolo añadiendo nuevas funcionalidades y mejoras en general.</li>
-                    <li>Identificar mas empreas y llevar un seguimiento de ellas.</li>
-                    <li>Autocandidaturas a las mismas empresas objetivo.</li>  
+                    <li><a>Mejorar el perfil de Linkedin, añadiendo nueva finromacion.</a></li>
+                    <li><a>Mejorar este mismo portafiolo añadiendo nuevas funcionalidades y mejoras en general.</a></li>
+                    <li><a>Identificar mas empreas y llevar un seguimiento de ellas.</a></li>
+                    <li><a>Autocandidaturas a las mismas empresas objetivo.</a></li>  
                 </ul>
+                </div>
+
             </div>
-            <div>
-                <h2 class="con-h2">EMPRESAS QUE SERIAN MI OPCION DE FUTURO</h2>
-                <ul class="con-ul">
-                    <li>Valve</li>
-                    <li>Redhat</li>
-                    <li>Github</li>
-                </ul>
+            <hr style="border: none;">
+            <div class="sv">
+                <div class="con-div">
+                <h2 class="con-h2">ITINERARIO PARA MI FORMACION FUTURA</h2>
+                <table style="border: 2px solid ; width: 100%;">
+                    <tr>
+                        <TH style="border: 2px solid ;">Formacion Complementaria</TH>
+                        <th style="border: 2px solid ;">Tipo de formación</th>
+                        <th style="border: 2px solid ;">Tiempo y coste</th>
+                        <th style="border: 2px solid ;">Donde se puede cursar</th>
+                    </tr>
+                    <tr>
+                        <th style="border: 2px solid ;">CFGS en Aplicaciones Multiplataforma</th>
+                        <th style="border: 2px solid ;">Concertada</th>
+                        <th style="border: 2px solid ;">2 cursos escolares</th>
+                        <th style="border: 2px solid ;">Centro o escuela</th>
+                    </tr>
+                    <tr>  
+                        <th style="border: 2px solid ;">Grado universitario en Biomedicina</th>
+                        <th style="border: 2px solid ;">Privada o Publica</th>
+                        <th style="border: 2px solid ;">4 / 3 Cursos escolares</th>
+                        <th style="border: 2px solid ;">Universidad</th>
+                    </tr>
+                    <tr>
+                        <th style="border: 2px solid ;">Certificado en COBOL</th>
+                        <th style="border: 2px solid ;">Certificado profesional, curso privado</th>
+                        <th style="border: 2px solid ;">A especializar</th>
+                        <th style="border: 2px solid ;">Plataforma Online</th>
+                    </tr>
+                </table>
+                </div>
+                <div class="sh">
+                    <div class="con-div">
+                        <h2 class="con-h2">EMPRESAS QUE SERIAN MI OPCION DE FUTURO</h2>
+                        <ul class="con-ul">
+                            <li><a>Valve</a></li>
+                            <li><a>Redhat</a></li>
+                            <li><a>Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="sv pc" style="margin-left: -20px; margin-right: -20px; padding: 0; gap: 10px; width: 100%; border: none;">
+                        <div style="height: 100%; border: none; background-color: var(--color-terciario);"></div>
+                        <div style="height: 100%; border: none; background-color: var(--color-sexto);"></div>
+                        <div style="height: 100%; border: none; background-color: var(--color-cuaternario)"></div>
+                        <div style="height: 100%; border: none; background-color: var(--color-quinto)"></div>
+                    </div>
+                    <div class="con-div pc">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
