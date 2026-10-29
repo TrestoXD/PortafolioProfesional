@@ -1,4 +1,4 @@
-[![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+![Static Badge](https://img.shields.io/badge/State-Mainteind-blue?style=plastic) [![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
 
 # Mi nombre es Vito Minaya González
 
