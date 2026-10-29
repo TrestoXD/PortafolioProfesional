@@ -1,4 +1,6 @@
-# Mi nombre es Vito Minaya González [![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+[![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+
+# Mi nombre es Vito Minaya González
 
 <p>Este es mi portafolio profesional, este sitio web esta echo unicamente con HTML, CSS y JS.</p>
 <p>Con el fin de demostrar de una manera visual y tangible mis habilidades, experienca y estilo profesional.</p>
